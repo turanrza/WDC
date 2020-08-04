@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- &lt; &gt; -->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Cheatsheet.css">
+        <title>Web Design Cheatsheet</title>
+    </head>
+    <main>
+        <header>
+            <nav id="nav">
+                <div id="HTMLnav">
+                <a href=#HTML>HTML:</a><br />
+                <a href=#HTMLbase>Basics</a><br />
+                <a href=#HTMLtab>Tables</a><br />
+                <a href=#HTMLfor>Forms</a><br />
+                </div>
+
+                <div id="CSSnav">
+                <a href=#CSS>CSS:</a><br />
+                <a href=#CSSrul>Rules</a><br />
+                <a href=#CSSdec>Declarations</a><br />
+                </div>
+            </nav>
+            <div id="b2top">
+                <a href=#WDC><p>Back to ⬆︎</p></a>
+            </div>
+            <h1 class="center" id="WDC">Web Design Cheatsheet</h1>
+        </header>
+        <body>
+            <h2 id="HTML" class="center">HTML</h2>
+            <h3 id="HTMLbase"class="center">HTML Basics</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="colhead">Element</th>
+                            <th class="colhead">Attribute</th>
+                            <th class="colhead">Comments</th>
+                            <th class="colhead">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- !DOCTYPE -->
+                        <tr>
+                            <th class="rowhead">!DOCTYPE' Declaration</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">The declaration is needed for browsers to recognise the type of the document to process (it defaults to HTML5)</td>
+                            <td class="example">&lt;!DOCTYPE html&gt;</td>
+                        </tr>
+                        <!-- HTML -->
+                        <tr>
+                            <th class="rowhead">html</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">An html element should be included at the top (after the !DOCTYPE declaration) and closed at the bottom of the html file</td>
+                            <td class="example">&lt;html&gt;&lt;/html&gt;</td>
+                        </tr>
+                        <!-- head -->
+                        <tr>
+                            <th class="rowhead">head</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">Contains the title of the page and the CSS stylesheet link</td>
+                            <td class="example">&lt;head&gt;&lt;/head&gt;</td>
+                        </tr>
+                        <!-- title -->
+                        <tr>
+                            <th class="rowhead">title</th>
+                            <td class="attribute"></td>
+                            <td class="comment">Displays the title of the tab and the appearance of the website link in a search enginge</td>
+                            <td class="example">&lt;title&gt;Webpage Name&lt;/title&gt;</td>
+                        </tr>
+                        <!-- link -->
+                        <tr>
+                            <th class="rowhead">CSS link</th>
+                            <td class="attribute">href</td>
+                            <td class="comment">The linking of the CSS file must be done with the appropriate relative path from the root folder (or an absolute path)</td>
+                            <td class="example">&lt;link rel="stylesheet" type="text/css" href="example.css"&gt;*</td>
+                        </tr>
+                        <!-- style -->
+                        <tr>
+                            <th class="rowhead">style</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">Contains CSS styling if the styling isn't applied in a separate .css file</td>
+                            <td class="example"><p>&lt;style&gt;<br />
+                                &nbsp;&nbsp;p {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br />
+                                &nbsp;&nbsp;}<br />
+                                &lt;/style&gt;</p>
+                            </td>
+                        </tr>
+                        <!-- body -->
+                        <tr>
+                            <th class="rowhead">body</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">The body element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc. An easy exemple is  the footer element - you should put it inside the body, but outside the main, as you will do with menu, or sidebar.</td>
+                            <td class="example">&lt;body&gt;&lt;/body&gt;</td>
+                        </tr>
+                        <!-- header -->
+                        <tr>
+                            <th class="rowhead">header</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">Usually contains navigation around the website and the page</td>
+                            <td class="example">&lt;header&gt;&lt;/header&gt;</td>
+                        </tr>
+                        <!-- main -->
+                        <tr>
+                            <th class="rowhead">main</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">Represents the dominant content of the body of a document. The content inside the main element should be unique to the document. It should not contain anycontent that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.</td>
+                            <td class="example">&lt;main&gt;&lt;/main&gt;</td>
+                        </tr>
+                        <!-- footer -->
+                        <tr>
+                            <th class="rowhead">footer</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">Typically contains information such as contact information, copyright information, terms of use, site Map, reference to top of page links</td>
+                            <td class="example">&lt;footer&gt;&lt;/footer&gt;</td>
+                        </tr>
+                        <!-- class -->
+                        <tr>
+                            <td class="rowhead">-</td>
+                            <td class="attribute">class</td>
+                            <td class="comment">
+                                <ul>
+                                    <li>You can use the same class on multiple elements
+                                    <li>You can use multiple classes on the same element</li>
+                                </ul></td>
+                            <td class="example">&lt;section class="food"&gt;</td>
+                        </tr>
+                        <!-- ID -->
+                        <tr>
+                            <td class="rowhead">-</td>
+                            <td class="attribute">id</td>
+                            <td class="comment">
+                                <ul>
+                                    <li>Each element can have only one ID
+                                    <li>Each page can have only one element with that ID</li>
+                                </ul></td>
+                            <td class="example">&lt;section id="vegetarian food"&gt;</td>
+                        </tr>
+                         <!-- nav -->
+                         <tr>
+                            <th class="rowhead">navigation</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">A nav element is used to define a block of navigation links such as menus and tables of contents. It is important to note that <nav> can be used inside of the <header> element but can also be used on its own. This section has to replicated exactly the same on all of the pages that include this navigation.</td>
+                            <td class="example"><p>&lt;nav&gt;<br />
+                                &nbsp;&nbsp;&lt;a href=#Section4>Section 4&lt;/a&gt;<br />
+                                &lt;/nav&gt;</p></td>
+                        </tr>
+                        <!-- links -->
+                        <tr>
+                            <th class="rowhead">link</th>
+                            <td class="attribute">-</td>
+                            <td class="comment">The link can be using a relative or an absoluthe path to a document, </td>
+                            <td class="example">&lt;a href="URL or relative path"&gt;&lt;/a&gt;</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <th class="rowhead">&lt;&gt;</th>
+                            <td class="attribute"></td>
+                            <td class="comment"></td>
+                            <td class="example">&lt;&gt;</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            <h3 id="HTMLtab" class="center">HTML Tables</h2>
+            <h3 id="HTMLfor" class="center">HTML Forms</h2>
+            <h2 id="CSS" class="center">Cascading Style Sheets</h2>
+            <h3 id="CSSrul" class="center">CSS Rules</h3>
+            <h3 id="CSSdec" class="center">CSS Declarations</h3>
+        </body>
+        <footer>
+            
+            <p id="Turan" class="center"> by Turan Rzazade</p>
+
+        </footer>
+    </main>
+    
+
+</html>

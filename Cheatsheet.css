@@ -1,0 +1,142 @@
+html {
+    background-color: lavender;
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: red;
+}
+
+#nav {
+    display: flex;
+}
+
+#HTMLnav {
+    flex: 1;
+    padding: 1%;
+    line-height: 160%;
+
+
+}
+#CSSnav {
+    padding: 1%;
+    line-height: 160%;
+}
+
+#b2top{
+    margin-bottom: 20%;
+    position: fixed;
+    right: 2%;
+    top: 92%;
+
+}
+
+h1 {
+    background-color: rgba(255, 102, 102, 0.8);
+    color:white;
+    font-size: 30px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 3%;
+    border-radius: 50%;
+
+}
+
+h2 {
+    background-color: rgba(255, 153, 153, 0.8);
+    color:white;
+    font-size: 27px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+h3 {
+    background-color: rgba(248, 131, 121, 0.8);
+    color:white;
+    font-size: 24px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+#Turan {
+    color: rgb(31, 82, 194);
+    text-align: center;
+    background-color: silver;
+    opacity: 0.7;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid lightblue;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 80%;
+    background-color: rgba(255,204,204,0.7);
+}
+
+th, td {
+    border-bottom: 1px solid silver;
+    border-left: 1px solid silver;
+    padding: 10px;
+
+}
+
+td ul {
+    list-style-position: inside;
+}
+
+.colhead {
+    color:  darkred;
+    font-size: 20px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.rowhead {
+    color: blue;
+}
+
+.attribute {
+    color: forestgreen;
+    font-size: 18px;
+}
+
+.comment {
+    text-align: left;
+    font-style: italic;
+    max-width: 900px;
+}
+
+.example {
+    text-align: left;
+}
+
+textarea {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1px;
+}
