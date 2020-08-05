@@ -20,31 +20,29 @@ a:link {
 }
 
 a:visited {
-    color: red;
+    color: crimson;
 }
 
-#nav {
+.nav {
     display: flex;
 }
 
-#HTMLnav {
+.HTMLnav {
     flex: 1;
     padding: 1%;
     line-height: 160%;
-
-
 }
-#CSSnav {
+
+.CSSnav {
     padding: 1%;
     line-height: 160%;
 }
 
-#b2top{
+.b2top{
     margin-bottom: 20%;
     position: fixed;
     right: 2%;
     top: 92%;
-
 }
 
 h1 {
@@ -53,9 +51,8 @@ h1 {
     font-size: 30px;
     margin-right: 20%;
     margin-left: 20%;
-    margin-top: 3%;
+    margin-top: 20px;
     border-radius: 50%;
-
 }
 
 h2 {
@@ -64,7 +61,7 @@ h2 {
     font-size: 27px;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 50%;
 }
 
@@ -74,17 +71,27 @@ h3 {
     font-size: 24px;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 50%;
 }
 
-#Turan {
+.Turan {
     color: rgb(31, 82, 194);
     text-align: center;
     background-color: silver;
     opacity: 0.7;
     margin-left: 600px;
     margin-right: 600px;
+}
+
+#boxmodel {
+    height: 470px;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border: 1px solid black;
+    display: block;
+
+
 }
 
 table {
@@ -94,7 +101,7 @@ table {
     padding: 10px;
     text-align: center;
     vertical-align: middle;
-    width: 80%;
+    width: 96%;
     background-color: rgba(255,204,204,0.7);
 }
 
@@ -110,33 +117,39 @@ td ul {
 }
 
 .colhead {
-    color:  darkred;
+    color:  rgba(102,0,51);
     font-size: 20px;
-    font-family: monospace;
+    font-family: impact;
     text-transform: uppercase;
 }
 
 .rowhead {
-    color: blue;
+    color: rgba(153, 0, 76);
+    font-family: monospace;
+    font-size: 15px;
+    width: 150px;
 }
 
-.attribute {
-    color: forestgreen;
-    font-size: 18px;
+.col2 {
+    color: darkblue;
+    font-size: 20px;
+    text-emphasis: bold;
+    font-family: monospace;
 }
 
-.comment {
+.col3 {
     text-align: left;
     font-style: italic;
-    max-width: 900px;
+    font-family: monospace;
+    text-emphasis: bold;
+    font-size: 16px;
+
 }
 
-.example {
+.col4 {
     text-align: left;
+    font-family: monospace;
+    width: 250px;
+    font-size: 16px;
 }
 
-textarea {
-    width: 95%;
-    margin: 0 auto;
-    padding: 1px;
-}
