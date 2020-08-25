@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<!-- This is a test comment -->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./html_css.css">
+        <title>Web Design Cheatsheet</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav" id="top">
+                <div class="HTMLnav">
+                    <a href=#rgx style="text-decoration-line: none;">RegEx</a><br />
+                    <a href=#HTML style="text-decoration-line: underline;">HTML</a><br />
+                    <a href=#HTMLbase style="text-decoration-line: none;">Basics</a><br />
+                    <a href=#HTMLtab style="text-decoration-line: none;">Tables</a><br />
+                    <a href=#HTMLfor style="text-decoration-line: none;">Forms</a><br />
+                    
+                </div>
+
+                <div class="CSSnav">
+                    <a href=#CSS style="text-decoration-line: underline;">CSS</a><br />
+                    <a href=#boxmodel style="text-decoration-line: none;">Box Model</a><br />
+                    <a href=#CSSrul style="text-decoration-line: none;">Rules</a><br />
+                    <a href=#CSSgrid style="text-decoration-line: none;">Grids</a><br />
+                    <a href=#fb style="text-decoration-line: none;">Flexbox</a><br />
+                    <a href=#CSSdec style="text-decoration-line: none;">Declarations</a><br />
+                    <a href=#CSStran style="text-decoration-line: none;">Transitions</a><br />
+                </div>
+            </nav>
+            <div class="b2top">
+                <a href=#top>
+                    <p>Back to ⬆︎</p>
+                </a>
+            </div>
+            <h1 class="center" id="WDC">Web Design Cheatsheet</h1>
+        </header>
+
+        <main>
+        <h2 id="HTML" class="center">HTML</h2>
+
+        <h3 id="HTMLbase" class="center">Basics</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="colhead">Element</th>
+                        <th class="colhead">Attribute</th>
+                        <th class="colhead">Comment</th>
+                        <th class="colhead">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- element structure -->
+                    <tr>
+                        <th class="rowhead">element structure</th>
+                        <td class="col2">-</td>
+                        <td class="col3">Within the opening and closing !tags is the !content; all together this is an !element</td>
+                        <td class="col4">&lt;content is within tags&gt; = element</td>
+                    </tr>
+                    <!-- !DOCTYPE -->
+                    <tr>
+                        <th class="rowhead">!DOCTYPE Declaration</th>
+                        <td class="col2">-</td>
+                        <td class="col3">The declaration is needed for browsers to recognise the type of the document to
+                            process (it defaults to HTML5)</td>
+                        <td class="col4">&lt;!DOCTYPE html&gt;</td>
+                    </tr>
+                    <!-- HTML -->
+                    <tr>
+                        <th class="rowhead">html</th>
+                        <td class="col2">lang="en"<br/>dir="ltr"</td>
+                        <td class="col3">An html element should be included at the top (after the !DOCTYPE declaration)
+                            and closed at the bottom of the html file. The attributes indicate that the language of the file is english and reading direction is left-to-right</td>
+                        <td class="col4">&lt;html&gt;&lt;/html&gt;</td>
+                    </tr>
+                    <!-- head -->
+                    <tr>
+                        <th class="rowhead">head</th>
+                        <td class="col2">-</td>
+                        <td class="col3">Contains the title of the page and the CSS stylesheet link</td>
+                        <td class="col4">&lt;head&gt;&lt;/head&gt;</td>
+                    </tr>
+                    <!-- title -->
+                    <tr>
+                        <th class="rowhead">title</th>
+                        <td class="col2"></td>
+                        <td class="col3">Displays the title of the tab and the appearance of the website link in a
+                            search enginge</td>
+                        <td class="col4">&lt;title&gt;Webpage Name&lt;/title&gt;</td>
+                    </tr>
+                    <!-- link -->
+                    <tr>
+                        <th class="rowhead">CSS link</th>
+                        <td class="col2">href</td>
+                        <td class="col3">The linking of the CSS file must be done with the appropriate relative path
+                            from the root folder (or an absolute path)</td>
+                        <td class="col4">&lt;link rel="stylesheet" type="text/css" href="stylesheet.css"&gt;*</td>
+                    </tr>
+                    <!-- style -->
+                    <tr>
+                        <th class="rowhead">style</th>
+                        <td class="col2">-</td>
+                        <td class="col3">Contains CSS styling if the styling isn't applied in a separate .css file</td>
+                        <td class="col4">
+                            <p>&lt;style&gt;<br />
+                                &nbsp;&nbsp;p {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br />
+                                &nbsp;&nbsp;}<br />
+                                &lt;/style&gt;</p>
+                        </td>
+                    </tr>
+                    <!-- body -->
+                    <tr>
+                        <th class="rowhead">body</th>
+                        <td class="col2">-</td>
+                        <td class="col3">The body element contains all the contents of an HTML document, such as text,
+                            hyperlinks, images, tables, lists, etc. An easy exemple is the footer element - you should
+                            put it inside the body, but outside the main, as you will do with menu, or sidebar.</td>
+                        <td class="col4">&lt;body&gt;&lt;/body&gt;</td>
+                    </tr>
+                    <!-- header -->
+                    <tr>
+                        <th class="rowhead">header</th>
+                        <td class="col2">-</td>
+                        <td class="col3">Usually contains navigation around the website and the page</td>
+                        <td class="col4">&lt;header&gt;&lt;/header&gt;</td>
+                    </tr>
+                    <!-- main -->
+                    <tr>
+                        <th class="rowhead">main</th>
+                        <td class="col2">-</td>
+                        <td class="col3">Represents the dominant content of the body of a document. The content inside
+                            the main element should be unique to the document. It should not contain anycontent that is
+                            repeated across documents such as sidebars, navigation links, copyright information, site
+                            logos, and search forms.</td>
+                        <td class="col4">&lt;main&gt;&lt;/main&gt;</td>
+                    </tr>
+                    <!-- footer -->
+                    <tr>
+                        <th class="rowhead">footer</th>
+                        <td class="col2">-</td>
+                        <td class="col3">Typically contains information such as contact information, copyright
+                            information, terms of use, site Map, reference to top of page links</td>
+                        <td class="col4">&lt;footer&gt;&lt;/footer&gt;</td>
+                    </tr>
+                    <!-- class -->
+                    <tr>
+                        <td class="rowhead">-</td>
+                        <td class="col2">class</td>
+                        <td class="col3">
+                            <ul>
+                                <li>You can use the same class on multiple elements
+                                <li>You can use multiple classes on the same element</li>
+                            </ul>
+                        </td>
+                        <td class="col4">&lt;section class="food"&gt;</td>
+                    </tr>
+                    <!-- ID -->
+                    <tr>
+                        <td class="rowhead">-</td>
+                        <td class="col2">id</td>
+                        <td class="col3">
+                            <ul>
+                                <li>Each element can have only one ID
+                                <li>Each page can have only one element with that ID</li>
+                            </ul>
+                        </td>
+                        <td class="col4">&lt;section class"vegetarian food"&gt;</td>
+                    </tr>
+                    <!-- nav -->
+                    <tr>
+                        <th class="rowhead">navigation</th>
+                        <td class="col2">-</td>
+                        <td class="col3">A nav element is used to define a block of navigation links such as menus and
+                            tables of contents. It is important to note that <nav> can be used inside of the <header>
+                                    element but can also be used on its own. This section has to replicated exactly the
+                                    same on all of the pages that include this navigation.</td>
+                        <td class="col4">
+                            <p>&lt;nav&gt;<br />
+                                &nbsp;&nbsp;&lt;a href=#Section4>Section 4&lt;/a&gt;<br />
+                                &lt;/nav&gt;</p>
+                        </td>
+                    </tr>
+                    <!-- links -->
+                    <tr>
+                        <th class="rowhead">link</th>
+                        <td class="col2">-</td>
+                        <td class="col3">The link can be using a relative or an absoluthe path to a document; it can also be used for on-the-page navigation, wrapping media or anything that can be turned into a link. target="_blank" opens the link in a new tab or window depending on the configuration of the browser</td>
+                        <td class="col4">&lt;a href="URL, ID or relative path" target="_blank"&gt;&lt;/a&gt;</td>
+                    </tr>
+                    <!-- Indentation between divs -->
+                    <tr>
+                        <th class="rowhead">Indentation between divs</th>
+                        <td class="col2">-</td>
+                        <td class="col3">Trailing comments prevents indentation whitespace from displaying between divs.</td>
+                        <td class="col4"> <img src="./Resources/Whitespace.png" style="width:250px;"> </td>
+                    </tr>
+                    <!-- hr -->
+                    <tr>
+                        <th class="rowhead">hr</th>
+                        <td class="col2">-</td>
+                        <td class="col3">The HTML 'hr' element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. It creates a line that separates the sections from each other</td>
+                        <td class="col4">&lt;&gt;&lt;/&gt;</td>
+                    </tr>
+                    <!-- div -->
+                    <tr>
+                        <th class="rowhead">div</th>
+                        <td class="col2">class<br/>id</td>
+                        <td class="col3">div's id attribute can be helpful for navigation and CSS purposes. These can also be replaced or complemented by 'sections'</td>
+                        <td class="col4">&lt;div class="front" id="pocket23"&gt;This is a pocket on the front of the website&lt;/div&gt;</td>
+                    </tr>
+                    <!-- sections -->
+                    <tr>
+                        <th class="rowhead">section</th>
+                        <td class="col2">class<br/>id</td>
+                        <td class="col3">sections are similar to divs, but content inside is usually grouped by a theme - it defines elements in a document, such as chapters, headings, or any other area of the document with the same theme</td>
+                        <td class="col4">&lt;section class="players"&gt;<br/>Messi - FC Barcelona<br/>Ronaldo - Real Madrid<br/>etc&lt;/section&gt;</td>
+                    </tr>
+                    <!-- article -->
+                    <tr>
+                        <th class="rowhead">article</th>
+                        <td class="col2">class<br/>id</td>
+                        <td class="col3">The 'article' element holds content that makes sense on its own. 'article' can hold content such as articles, blogs, comments, magazines, etc. An 'article' tag would help someone using a screen reader understand where the article content (that might contain a combination of text, images, audio, etc.) begins and ends</td>
+                        <td class="col4">&lt;article&gt;This is a news paper article about brown bears&lt;/article&gt;</td>
+                    </tr>
+                    <!-- aside -->
+                    <tr>
+                        <th class="rowhead">aside</th>
+                        <td class="col2">class<br/>id</td>
+                        <td class="col3">The 'aside' element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. This element can be used alongside other elements such as 'article' or 'section'. Some common uses of the 'aside' element are for:<ul><li>Bibliographies</li><li>Endnotes</li><li>Comments</li><li>Pull quotes</li><li>Editorial sidebars</li><li>Additional information</li></ul></td>
+                        <td class="col4">&lt;aside&gt;<br/>Footnotes:<br/>&lt;/aside&gt;</td>
+                    </tr>
+                    <!-- p -->
+                    <tr>
+                        <th class="rowhead">p</th>
+                        <td class="col2">style<br/>em<br/>strong</td>
+                        <td class="col3">p starts a new paragraph and is a block element</td>
+                        <td class="col4">&lt;p&gt;new paragraph&lt;/p&gt;</td>
+                    </tr>
+                    <!-- span -->
+                    <tr>
+                        <th class="rowhead">span</th>
+                        <td class="col2">style<br/>em<br/>strong</td>
+                        <td class="col3">has the same function as p, but is an inline element</td>
+                        <td class="col4">&lt;span&gt;inline text&lt;/span&gt;</td>
+                    </tr>
+                    <!-- em -->
+                    <tr>
+                        <th class="rowhead">em<br/>strong</th>
+                        <td class="col2">-</td>
+                        <td class="col3">'em' is for formatring in italics while 'strong' is for formatting in bold</td>
+                        <td class="col4">&lt;em&gt;<em>EXAMPLE</em>&lt;/em&gt;<br/>&lt;strong&gt;<strong>EXAMPLE</strong>&lt;/strong&gt;</td>
+                    </tr>
+                    <!-- headings -->
+                    <tr>
+                        <th class="rowhead">h1 - h6</th>
+                        <td class="col2">style</td>
+                        <td class="col3">headings can go from h1 (most senior) to h6 (least senior) and each have their own styling</td>
+                        <td class="col4">&lt;h2&gt;Sub-heading&lt;/h2&gt;</td>
+                    </tr>
+                    <!-- ul/ol -->
+                    <tr>
+                        <th class="rowhead">ul/ol</th>
+                        <td class="col2">-</td>
+                        <td class="col3">We can create unordered lists with ul tags and ordered lists with ol tags. li tags don't necessarily need to be closed. The links inside the li elements are called anchor elements.</td>
+                        <td class="col4">&lt;ul&gt;<br/>List: <ul><li>item1</li><li>item2</li></ul>&lt;/ul&gt;</td>
+                    </tr>
+                    <!-- img -->
+                    <tr>
+                        <th class="rowhead">img</th>
+                        <td class="col2">src<br/>alt<br/>height<br/>width</td>
+                        <td class="col3">Images and other elements can be nested within a tags to make them hyperlinks. It's good practice to inclide the 'alt' attribute for an img tag to describe the image for the visually imparied and better search engine recognition. img is a self-closing tag<br/><br/>
+                        In the example below .container represents a container div. It is set to a width of 50% (half of the browser’s width, in this example) and a height of 200 pixels. Setting overflow to hidden ensures that any content with dimensions larger than the container will be hidden from view.<br/>The second CSS rule ensures that images scale with the width of the container. The height property is set to auto, meaning an image’s height will automatically scale proportionally with the width. Finally, the last line will display images as block level elements (rather than inline-block, their default state). This will prevent images from attempting to align with other content on the page (like text), which can add unintended margin to the images.<br/>It’s worth memorizing the entire example above. It represents a very common design pattern used to scale images and videos proportionally.<br/>If the image is larger than the container, the vertical portion of the image will overflow and will not display. To swap this behavior, you can set max-height to 100% and width to auto (essentially swapping the values). This will scale the height of the image with the height of the container instead. If the image is larger than the container, the horizontal portion of the image will overflow and not display.
+                        <br/><img src="Resources/scalingimgs.png" style="width: 350px;"></td>
+                        <td class="col4">&lt;img src="path" alt="description"/&gt;</td>
+                    </tr>
+                    <!-- video -->
+                    <tr>
+                        <th class="rowhead">video</th>
+                        <td class="col2">src<br/>height<br/>width<br/>controls<br/>autoplay<br/>loop</td>
+                        <td class="col3">Video tags can include height, width, control, autoplay and loop attributes. In the event the video is inaccessible, the content within the tags will be displayed</td>
+                        <td class="col4">&lt;video src="https:" height="240" width="320" controls autoplay loop&gt;Video not available&lt;/video&gt;</td>
+                    </tr>
+                    <!-- audio -->
+                    <tr>
+                        <th class="rowhead">audio</th>
+                        <td class="col2">type="audio/mp3"<br/>autoplay<br/>controls</td>
+                        <td class="col3">the audio tag has to include the attributes within its tag, but it has to include the path as the content</td>
+                        <td class="col4">&lt;audio autoplay controls&gt;<br/>&lt;source src="path" type="audio/mp3"&gt;<br/>&lt;/audio&gt;</td>
+                    </tr>
+                    <!-- embed -->
+                    <tr>
+                        <th class="rowhead">embed</th>
+                        <td class="col2">-</td>
+                        <td class="col3">Media such as audio, video, gifs and files from an external source can be also embedded with the self-closing embed tag</td>
+                        <td class="col4">&lt;embed src="path"&gt;</td>
+                    </tr>
+                    <!-- figure -->
+                    <tr>
+                        <th class="rowhead">figure</th>
+                        <td class="col2">img<br/>alt<br/>style</td>
+                        <td class="col3">the figure element has an optional caption and is a single unit outside the main flow of the document and can be removed without changing the document's meaning</td>
+                        <td class="col4">&lt;figure&gt;&lt;img src="path" alt="description"/&gt;&lt;/figure&gt;</td>
+                    </tr>
+                    <!-- figcaption -->
+                    <tr>
+                        <th class="rowhead"></th>
+                        <td class="col2"></td>
+                        <td class="col3"></td>
+                        <td class="col4">&lt;&gt;&lt;/&gt;</td>
+                    </tr>
+                </tbody>
+            </table>
+        <h3 id="HTMLtab" class="center">Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="colhead">Element</th>
+                        <th class="colhead">Comment</th>
+                        <th class="colhead">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- table -->
+                    <tr>
+                        <th class="rowhead">table</th>
+                        <td class="col3">Just like an html document, tables have a head, body and footer and the entire table must sit within the table element</td>
+                        <td class="col4"><img src="Resources/table.png" width="240px"></td>
+                    </tr>
+                    <!-- thead -->
+                    <tr>
+                        <th class="rowhead">thead</th>
+                        <td class="col3">The thead elements uses table headings (th) tags and is only used for table headings - use thead to encapsulate an entire row (or rows) to designate them as the table header</td>
+                        <td class="col4">&lt;thead&gt;&lt;/thead&gt;</td>
+                    </tr>
+                    <!-- tbody -->
+                    <tr>
+                        <th class="rowhead">tbody</th>
+                        <td class="col3">he elements inside a table body are table rows (tr) which contain table data (td)</td>
+                        <td class="col4">&lt;tbody&gt;&lt;/tbody&gt;</td>
+                    </tr>
+                    <!-- tfoot -->
+                    <tr>
+                        <th class="rowhead">tfoot</th>
+                        <td class="col3">Table footers are usually used for the last rows of the table which include sums and totals</td>
+                        <td class="col4">&lt;tfoot&gt;&lt;/tfoot&gt;</td>
+                    </tr>
+                    <!-- th -->
+                    <tr>
+                        <th class="rowhead">th</th>
+                        <td class="col3">th is used to style a specific cell as a header cell rather than an ordinary data cell</td>
+                        <td class="col4">&lt;th&gt;MONTH&lt;/th&gt;</td>
+                    </tr>
+                    <!-- tr -->
+                    <tr>
+                        <th class="rowhead">tr</th>
+                        <td class="col3">tr creates a row within which td can be specified in designated columns</td>
+                        <td class="col4">&lt;tr id="April"&gt;April&lt;/tr&gt;</td>
+                    </tr>
+                    <!-- td -->
+                    <tr>
+                        <th class="rowhead">td</th>
+                        <td class="col3">td is used to contain the data within the table in the specified row and specified column<br/>td can also span the cell across 1+ rows or columns with 'rowspan' (span vertically) and 'colspan' (span horizontally)</td>
+                        <td class="col4">&lt;td colspan="2"&gt;£50,000&lt;/td&gt;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <h3 id="HTMLfor" class="center">Forms</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="colhead">Topic</th>
+                        <th class="colhead">Comment</th>
+                        <th class="colhead">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- forms -->
+                    <tr>
+                        <th class="rowhead">form</th>
+                        <td class="col3">Form is a self-closing tag. The 'form' element is responsile for collection information and sending it somewhere else. The action attiribute indicates the location of where the form goes. The method attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute). The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").<br/><br/>GET - Default. Appends the form-data to the URL in name/value pairs: URL?name=value&name=value<ul><li>Appends form-data into the URL in name/value pairs</li><li>The length of a URL is limited (about 3000 characters)</li><li>Never use GET to send sensitive data! (will be visible in the URL)</li><li>Useful for form submissions where a user wants to bookmark the result</li><li>GET is better for non-secure data, like query strings in Google</li></ul>POST - Sends the form-data as an HTTP post transaction<br/><ul><li>Appends form-data inside the body of the HTTP request (data is not shown in URL)</li><li>Has no size limitations</li><li>Form submissions with POST cannot be bookmarked</li></ul></td>
+                        <td class="col4">&lt;form action="submission.html" method="POST"&gt;</td>
+                    </tr>
+                    <!-- validation -->
+                    <tr>
+                        <th class="rowhead">validation</th>
+                        <td class="col3">There are different types of validation. server-side validation is when data is sent to another machine (server) (check passwords), whereas client-side validation is used when we want to check the data in the browser (check password is at least 8 characters long) (occurs before data is sent to the server to match the username and passwords to their pairs). Client-side validation is helpful in giving feedback to clients without waiting to send and receive data to/from server</td>
+                        <td class="col4">-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>>
+            <table>
+                <thead>
+                    <th id="inputtypes" colspan="4">Input Types</td>
+                </thead>
+                <tbody>
+                    <!-- label -->
+                    <tr>
+                        <th class="rowhead">label</th>
+                        <td class="col2">-</td>
+                        <td class="col3">Creates a label for the input box and links them together by 'for' and 'id' attributes</td>
+                        <td class="col4">&lt;label for="username"&gt;Username:&lt;/label&gt;</td>
+                    </tr>
+                    <!-- text -->
+                    <tr>
+                        <th class="rowhead">text</th>
+                        <td class="col2">type="text"<br/>id<br/>name<br/>minlength<br/>maxlength<br/>required<br/>pattern</td>
+                        <td class="col3">Input type 'text' creates a (small) field for the user to enter text - usually used for usernames and passwords and the like. Input is a self-closing tag.<br/><br/>In the 'type' attribute we indicate the type of information that is going to be received - whether it's text, numbers, password, etc. <br/><br/>The 'id' attribute helps us link the input with the appropriate label and the 'name' attribute sends the value from the input together with the input's name for ease of processing on the other (receiving) end i.e. value is paired with name - name=value<br/><br/>The 'minlength-maxlength' attriubutes help set the min max values for a text type input<br/><br/>The 'required' attribute prevents the form from being submitted without input value in this field<br/><br/>If we want user input to follow specific guidlines, we use the 'pattern' attribute and assign it a regular expression (regex) i.e. a sequence of characters that make up a search pattern. The regex (or class) is indicated in square brackets, while the character count is indicated in curly braces. Here the plus sign is a quantifier and means one or more times. {3} - exactly three times; {2,4} - two to four times; {3,} - three or more times; {*} - zero or more times; {?} - once or none</td>
+                        <td class="col4">&lt;label for="username"&gt;Username:&lt;/label&gt;<br/><br/>&lt;input type="text" id="username" name="username" required minlength="3" maxlength="20" pattern="[0-9a-zA-Z]+{3,20}"&gt;<br/><br/><input type="text" id="username" name="username" minlength="3" maxlength="20" required pattern="[0-9a-zA-Z]+{3,20}"></td>
+                    </tr>
+                    
+                    <!-- password -->
+                    <tr>
+                        <th class="rowhead">password</th>
+                        <td class="col2">type="password"<br/>id<br/>name<br/>minlength<br/>maxlength<br/>required<br/>pattern</td>
+                        <td class="col3">Passwords have their own attribute type and can be assigned all of the same attributes and patterns as text</td>
+                        <td class="col4">&lt;label for="password"&gt;Password:&lt;/label&gt;<br/><br/>&lt;input type="password" name="password" id="password" required minlength="8" pattern="regex"&gt;<br/><br/><input type="password" name="password" id="password"></td>
+                    </tr>
+                    <!-- number -->
+                    <tr>
+                        <th class="rowhead">number</th>
+                        <td class="col2">type="number"<br/>id<br/>name<br/>step="x" <br/>value="x" <br/>min="x" <br/>max="x"</td>
+                        <td class="col3">The 'step' lets the user increase or decrease (with little arrows om the side) by the specified amount, while the value displays a default value, which in this case is 2.<br/><br/>The 'min-max' attriubutes help set the min max values for a number type input</td>
+                        <td class="col4">&lt;label for="amount"&gt;Number:&lt;/label&gt;<br/><br/> &lt;input type="number" name="amount" id="amount" step="1" value="5" min="1" max="4"&gt;<br/><br/><input type="number" name="amount" id="amount" step="1" value="5" min="1" max="4"></td>
+                    </tr>
+                    <!-- range -->
+                    <tr>
+                        <th class="rowhead">range</th>
+                        <td class="col2">type="range"<br/>id<br/>name<br/>step="x" <br/>value="x" <br/>min="x" <br/>max="x"</td>
+                        <td class="col3">The 'range' attribute creates a ranged input with a default value, min and max quantities and step attribute as a slider </td>
+                        <td class="col4">&lt;label for="doneness"&gt;How rare should the steak be?&lt;/label&gt;<br/><br/> &lt;input type="range" name="doneness" id="doneness" value="3" min="1" max="5" step="0.5"&gt;<br/><br/><input type="range" name="doneness" id="doneness" value="3" min="1" max="5" step="0.5"></td>
+                    </tr>
+                    <!-- checkbox -->
+                    <tr>
+                        <th class="rowhead">checkbox</th>
+                        <td class="col2">type="checkbox"<br/>id<br/>name<br/>value="x"</td>
+                        <td class="col3">The value should be the same as the label id, so that the receiving end knows what the checkmark is for. However the name 'topping' helps group the inputs together</td>
+                        <td class="col4">&lt;label for="lettuce"&gt;Lettuce&lt;/label&gt;<br/><br/> &lt;input type="checkbox" name="topping" id="lettuce" value="lettuce"&gt; <br/><br/> <label for="lettuce">Lettuce</label><input type="checkbox" name="topping" id="lettuce" value="lettuce"> <br/><br/>&lt;label for="tomato"&gt;Tomato&lt;/label&gt;<br/><br/>&lt;input type="checkbox" name="topping" id="tomato" value="tomato"&gt;<br/><br/><label for="tomato">Tomato</label><input type="checkbox" name="topping" id="tomato" value="tomato"></td>
+                    </tr>
+                    <!-- radio -->
+                    <tr>
+                        <th class="rowhead">radio</th>
+                        <td class="col2">type="checkbox"<br/>id<br/>name<br/>value="x"</td>
+                        <td class="col3">Input type 'radio' allows for one selection. The name helps group the options together, id matches the input to the label and the name sends the selected value (name=value) to the server</td>
+                        <td class="col4">&lt;label for="yes"&gt;Yes&lt;/label&gt;<br/><br/> &lt;input type="radio" name="cheese" id="yes" value="yes"&gt;<br/><br/>&lt;label for="no"&gt;No&lt;/label&gt;<br/><br/> &lt;input type="radio" name="cheese" id="no" value="no"&gt;<br/><br/><p>Would you like to add cheese?</p><input type="radio" name="cheese" id="yes" value="yes"><label for="yes">Yes</label><input type="radio" name="cheese" id="no" value="yes"><label for="no">No</label></td>
+                    </tr>
+                    <!-- dropdown list -->
+                    <tr>
+                        <th class="rowhead">dropdown list</th>
+                        <td class="col2">select name<br/>select id<br/>options</td>
+                        <td class="col3">This creates a dropdownlist. When this information is submitted the name of the select together with the value selected are sent through</td>
+                        <td class="col4">&lt;label for="bun"&gt;What type of bun would you like?&lt;/label&gt;<br/><br/>&lt;select name="bun" id="bun"&gt;<br/>&nbsp;&nbsp;&lt;option value="sesame"&gt;Sesame&lt;/option&gt;<br/>&nbsp;&nbsp;&lt;option value="potato"&gt;Potato&lt;/option&gt;<br/>&nbsp;&nbsp;&lt;option value="pretzel"&gt;Pretzel&lt;/option&gt;<br/><br/><label for="bun">What type of bun would you like?</label><br/><br/><select name="bun" id="bun"><option value="sesame">Sesame</option><option value="potato">Potato</option><option value="pretzel">Pretzel</option></select></td>
+                    </tr>
+                    <!-- datalist -->
+                    <tr>
+                        <th class="rowhead">datalist</th>
+                        <td class="col2">type="datalist"<br/>datalist id<br/>options</td>
+                        <td class="col3">Input type = datalist where you can type, but still have options. If none of the options provided are chosen by the client, the user's input in sent through as the value paired with the input name. The input attribute 'list' links the input with the datalist id</td>
+                        <td class="col4">&lt;label for="sauce"&gt;What type of sauce would you like?&lt;/label&gt;<br/><br/>&lt;input list="sauces" id="sauce" name="sauce"&gt;<br/><br/>&lt;datalist id="sauces"&gt;<br/>&nbsp;&nbsp;&lt;option value="Ketchup"&gt;&lt;/option&gt;<br/>&nbsp;&nbsp;&lt;option value="Mayo"&gt;&lt;/option&gt;<br/>&nbsp;&nbsp;&lt;option value="Garlic"&gt;&lt;/option&gt;<br/>&lt;/datalist&gt;<br/><br/><label for="sauce">What type of sauce would you like?</label><br/><br/><input list="sauces" id="sauce" name="sauce"><datalist id="sauces"><option value="Ketchup"></option><option value="Mayo"></option><option value="Mustard"></option><option value="Garlic Mayo"></option></datalist></td>
+                    </tr>
+                    <!-- textarea -->
+                    <tr>
+                        <th class="rowhead">textarea</th>
+                        <td class="col2">type="textarea"<br/>id<br/>name<br/>rows<br/>cols</td>
+                        <td class="col3">textarea element is used to create a bigger text field for users to write more text - the rows and the columns need to be specified and the content displays a default message</td>
+                        <td class="col4">&lt;label for="extra"&gt;Anything else?&lt;/label&gt;<br/><br/>&lt;textarea id="extra" name="extra" rows="3" cols="25"&gt;Please insert comment&lt;/textarea&gt;<br/><br/><label for="extra">Anything else?</label><br><textarea id="extra" name="extra" rows="2" cols="25">Please insert your comments here</textarea></td>
+                    </tr>
+                    <!-- submit -->
+                    <tr>
+                        <th class="rowhead">submit</th>
+                        <td class="col2">type="submit"<br/>value</td>
+                        <td class="col3">Creates the submit button. If no value is specified, displays 'submit' by default</td>
+                        <td class="col4">&lt;input type="submit" value="Send"&gt; </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <h2 class="center" id="CSS">Cascading Style Sheets</h2>
+        <h3 class="center" id="CSSrul">Rules</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="colhead">Topic</th>
+                        <th class="colhead">Comment</th>
+                        <th class="colhead">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- CSS Units -->
+                    <tr>
+                        <th class="rowhead">CSS Units</th>
+                        <td class="col3">
+                            <strong>Absolute Lengths:</strong>
+                            <ol>
+                                <li>cm - centimeters</li>
+                                <li>mm - millimeters</li>
+                                <li>in - inches (1in = 96px = 2.54cm)</li>
+                                <li>px - pixels (1px = 1/96th of 1in). Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.</li>
+                                <li>pt - points (1pt = 1/72 of 1in)</li>
+                                <li>pc - picas (1pc = 12 pt)</li></ol><br/>
+                            <p>Relative measurements offer an advantage over hard coded measurements, as they allow for the proportions of a website to remain intact regardless of screen size or layout.</p>
+                            <strong>Relative Lengths:</strong>
+                            <ol>
+                                <li>em - Relative to the font-size of the element (2em means 2 times the size of the current font). For example, if the base font of a browser is 16 pixels (which is normally the default size of text in a browser), then 1 em is equal to 16 pixels. 2 ems would equal 32 pixels, and so on</li>
+                                <li>rem - Relative to font-size of the root element. It acts similar to em, but instead of checking parent elements to size font, it checks the root element. The root element is the 'html' tag. Most browsers set the font size of <html> to 16 pixels, so by default rem measurements will be compared to that value.</li>
+                                <li>% - Relative to the parent element</li>
+                                <li>ex - Relative to the x-height of the current font (rarely used)</li>
+                                <li>ch - Relative to the width of the "0" (zero)</li>
+                                <li>vw - Relative to 1% of the width of the viewport*</li>
+                                <li>vh - Relative to 1% of the height of the viewport*</li>
+                                <li>vmin - Relative to 1% of viewport's* smaller dimension</li>
+                                <li>vmax - Relative to 1% of viewport's* larger dimension</li><br/>
+                            </ol>
+                            * Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.</td>
+                        <td class="col4">-</td>
+                    </tr>
+                    <!-- Inline Styles -->
+                    <tr>
+                        <th class="rowhead">Inline Styles</th>
+                        <td class="col3">Used to style the element directly inside of itself within the HTML
+                            file</td>
+                        <td class="col4">&lt;p style="text-align: center; color: blueviolet;"&gt;Hello
+                            World!&lt;/p&gt;</td>
+                    </tr>
+                    <!-- Style tags -->
+                    <tr>
+                        <th class="rowhead">Style tag</th>
+                        <td class="col3">Used to insert html styling directly within the HTML file, inside the
+                            'head' element</td>
+                        <td class="col4">&lt;style&gt;<br />&nbsp;&nbsp;p {<br />&nbsp;&nbsp;&nbsp;&nbsp;margin:
+                            0 auto;<br />&nbsp;&nbsp;}<br />&lt;/style&gt;</td>
+                    </tr>
+                    <!-- Styling hierarchy -->
+                    <tr>
+                        <th class="rowhead">Styling hierarchy</th>
+                        <td class="col3">1: !important; 2: ID; 3: class; 4: tag/td>
+                        <td class="col4">-</td>
+                    </tr>
+                    <!-- Addint multiple classes to an element -->
+                    <tr>
+                        <th class="rowhead">Classes</th>
+                        <td class="col3">Classes are used to style elements in CSS. It's possible to assing
+                            multiple classes to one HTML element</td>
+                        <td class="col4">&lt;section class="center blue bold"&gt;<br /> CSS: .class { ..</td>
+                    </tr>
+                    <!-- IDs -->
+                    <tr>
+                        <th class="rowhead">IDs</th>
+                        <td class="col3">Then, CSS can select HTML elements by their id attribute. To select an
+                            id element, CSS prepends the id name with a hashtag (#)</td>
+                        <td class="col4">&lt;div id="tempC"&gt;<br /> CSS: #tempC { ..</td>
+                    </tr>
+                    <!-- Multiple selectors -->
+                    <tr>
+                        <th class="rowhead">Multiple selectors</th>
+                        <td class="col3">We can style multiple selectors by separating them with a comma</td>
+                        <td class="col4">h1, h2, .col5, #widebox { ..</td>
+                    </tr>
+                    <!-- Chaining tags and classes -->
+                    <tr>
+                        <th class="rowhead">Chaining tags and classes</th>
+                        <td class="col3">i.e. combining multiple selectors. The code below would select only the
+                            h2 elements that have a class of destination. If a p element also had a class of
+                            destination, the rule in the example would not style the paragraph.</td>
+                        <td class="col4">&lt;h2 class="destination"&gt;&lt;/h2&gt;<br />CSS: h2.destination { ..
+                        </td>
+                    </tr>
+                    <!-- Chaining IDs and classes -->
+                    <tr>
+                        <th class="rowhead">Chaining IDs and classes</th>
+                        <td class="col3">i.e. combining multiple selectors. The code below would select only the
+                            class elements that have BOTH in ID of h2 and a class of destination. If a p element
+                            also had an ID of h2 or class of destination, the rule in the example would not
+                            style the paragraph.<br />You can chain tags, ID and classes however you like,
+                            except you can't chain tags to IDs (#IDtag) and you can't chain tags to classes
+                            (.classtag)</td>
+                        <td class="col4">&lt;h2 class="destination" id="h2"&gt;&lt;/h2&gt;<br />CSS:
+                            #h2.destination {..</td>
+                    </tr>
+                    <!-- Nesting -->
+                    <tr>
+                        <th class="rowhead">Nesting</th>
+                        <td class="col3">It's possible to select to style elements/classes that are nested
+                            within other HTML elements. <strong>REVISIT this, as information varies in all
+                                sources!</strong></td>
+                        <td class="col4">&lt;div
+                            class="description"&gt;<br />&nbsp;&nbsp;&lt;h5&gt;Topic&lt;/h5&gt;<br />&lt;/div&gt;<br />CSS:
+                            .decription h5<br />OR<br />CSS: table tr th (tags only)</td>
+                    </tr>
+                    <!-- !important -->
+                    <tr>
+                        <th class="rowhead">!important</th>
+                        <td class="col3">There is one thing that is even more specific than IDs: !important.
+                            !important can be applied to specific attributes instead of full rules. It will
+                            override any style no matter how specific it is. As a result, it should almost never
+                            be used. Once !important is used, it is very hard to override.
+                        </td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;color: red !important;<br />}</td>
+                    </tr>
+                    <!-- Font family -->
+                    <tr>
+                        <th class="rowhead">Two+ word font names</th>
+                        <td class="col3">When the name of a typeface consists of more than one word, it’s a best
+                            practice to enclose the typeface’s name in quotes</td>
+                        <td class="col4">h1 {<br />&nbsp;&nbsp;font-family: "Courier New";<br />}</td>
+                    </tr>
+                    <!-- loading fonts -->
+                    <tr>
+                        <th class="rowhead">Loading fonts</th>
+                        <td class="col3">1. The link to the font must be pasted before the style sheet link in the head element, because it needs to load before the stylesheet loads. <br/>2. The link to the font can also be pasted into the browser, from where the required 'latin'-labelled instructions can be copy-pasted directly in the top of the CSS file. <br/>3. While Google Fonts and other resources can broaden font selection, you may wish to use an entirely different font or abstain from using a font from an external service and indicate a relative path instead. Fonts can be of different formats (tff, woff, woff2) so it's important to specify all of them when using own fonts.</td>
+                        <td class="col4"><img src="./Resources/fonts.png" style="width: 248px;"></td>
+                    </tr>
+                    <!-- Margin collapse -->
+                    <tr>
+                        <th class="rowhead">Margin collapse</th>
+                        <td class="col3">Horizontal margins (left and right), like padding, are always displayed and added together. For example, if two divs with ids #div-one and #div-two, are next to each other, they will be as far apart as the sum of their adjacent margins.<br/>Unlike horizontal margins, vertical margins do not add. Instead, the larger of the two vertical margins sets the distance between adjacent elements. In this example, the vertical margin between the img1 and img2 elements is 30 pixels. Although the sum of the margins is 50 pixels, the margin collapses so the spacing is only dependent on the img2 bottom margin.</td>
+                        <td class="col4">img1 {<br />&nbsp;&nbsp;margin: 20px;<br />}<br/><br/>img2 {<br />&nbsp;&nbsp;margin: 30px;<br />}</td>
+                    </tr>
+                    <!-- Calculating total element size -->
+                    <tr>
+                        <th class="rowhead">Total size</th>
+                        <td class="col3">All of the components of the box model comprise an element’s size. For example, an image that has the following dimensions is 364 pixels wide and 244 pixels tall.<ul>
+                            <li>300 pixels wide</li>
+                            <li>200 pixels tall</li>
+                            <li>10 pixels padding on the left and right</li>
+                            <li>10 pixels padding on the top and bottom</li>
+                            <li>2 pixels border on the left and right</li>
+                            <li>2 pixels border on the top and bottom</li>
+                            <li>20 pixels margin on the left and right</li>
+                            <li>10 pixels margin on the top and bottom</li></ul><br/>
+                            The total dimensions (364px by 244px) are calculated by adding all of the vertical dimensions together and all of the horizontal dimensions together. Sometimes, these components result in an element that is larger than the parent’s containing area (to solve this problem use overflow)</td>
+                        <td class="col4">-</td>
+                    </tr>
+                    <!-- Reset to default -->
+                    <tr>
+                        <th class="rowhead">Reset to default</th>
+                        <td class="col3">All major web browsers have a default stylesheet they use in the absence of an external stylesheet. These default stylesheets are known as user agent stylesheets. User agent stylesheets often have default CSS rules that set default values for padding and margin. This affects how the browser displays HTML elements, which can make it difficult for a developer to design or style a web page. Many developers choose to reset these default values so that they can truly work with a clean slate.</td>
+                        <td class="col4">* {<br />&nbsp;&nbsp;margin: 0;<br />&nbsp;&nbsp;padding: 0;<br/>}</td>
+                    </tr>
+                    <!-- media queries -->
+                    <tr>
+                        <th class="rowhead">Media Queries</th>
+                        <td class="col3">CSS uses media queries to adapt a website’s content to different screen sizes. With media queries, CSS can detect the size of the current screen and apply different CSS styles depending on the width of the screen. The media query in the example defines a rule for screens smaller than 480 pixels (approximately the width of many smartphones in landscape orientation)
+                            <ol>
+                                <li>@media — This keyword begins a media query rule and instructs the CSS compiler on how to parse the rest of the rule</li>
+                                <li>only screen — Indicates what types of devices should use this rule. In early attempts to target different devices, CSS incorporated different media types (screen, print, handheld). The rationale was that by knowing the media type, the proper CSS rules could be applied. However, “handheld” and “screen” devices began to occupy a much wider range of sizes and having only one CSS rule per media device was not sufficient. screen is the media type always used for displaying content, no matter the type of device. The only keyword is added to indicate that this rule only applies to one media type (screen)</li>
+                                <li>and (max-width : 480px) — This part of the rule is called a media feature, and instructs the CSS compiler to apply the CSS styles to devices with a width of 480 pixels or smaller. Media features are the conditions that must be met in order to render the CSS within a media query</li>
+                                <li>CSS rules are nested inside of the media query’s curly braces. The rules will be applied when the media query is met. In the example above, the text in the body element is set to a font-size of 12px when the user’s screen is less than 480px.</li></ol></td>
+                        <td class="col4"><img src="Resources/mediaqueries.png" style="width: 240px"><br/><img src="Resources/mediaqueries2.png" style="width: 240px"></td>
+                    </tr>
+                    <!-- screen resolution -->
+                    <tr>
+                        <th class="rowhead">Screen Resolution (DPI/DPC)</th>
+                        <td class="col3">Many times we will want to supply higher quality media (images, video, etc.) only to users with screens that can support high resolution media. Targeting screen resolution also helps users avoid downloading high resolution (large file size) images that their screen may not be able to properly display.<br/><br/>To target by resolution, we can use the min-resolution and max-resolution media features. These media features accept a resolution value in either dots per inch (dpi) or dots per centimeter (dpc). <br/><br/>The and operator can be used to require multiple media features. Therefore, we can use the and operator to require both a max-width of 480px and to have a min-resolution of 300dpi. By placing the and operator between two media features, the browser will require both media features to be true before it renders the CSS within the media query.<br/><br/>If only one of multiple media features in a media query must be met, media features can be separated in a comma separated list. For example, if we needed to apply a style when only one of the below is true: 1) The screen is more than 480 pixels wide OR 2) The screen is in landscape mode - we could write the media features separated by commas, as is shown in the second example. (note that the second media feature is orientation. The orientation media feature detects if the page has more width than height. If a page is wider, it’s considered landscape, and if a page is taller, it’s considered portrait)</td>
+                        <td class="col4"><img src="Resources/dpi.png" style="width: 240px"><br/><br/><img src="Resources/mediaqueries3.png" style="width: 240px"></td>
+                    </tr>
+                    <!-- breakpoints -->
+                    <tr>
+                        <th class="rowhead">Breakpoints</th>
+                        <td class="col3">The points at which media queries are set are called breakpoints. Breakpoints are the screen sizes at which your web page does not appear properly. Rather than set breakpoints based on specific devices, the best practice is to resize your browser to view where the website naturally breaks based on its content. The dimensions at which the layout breaks or looks odd become your media query breakpoints. Within those breakpoints, we can adjust the CSS to make the page resize and reorganize. <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png">List</a>  of breakpoints by device width.</td>
+                        <td class="col4">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        <h3 class="center" id="CSSgrid">Grids</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="colhead">Topic</th>
+                        <th class="colhead">Comment</th>
+                        <th class="colhead">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Creating a grid -->
+                    <tr>
+                        <th class="rowhead">Creating a grid</th>
+                        <td class="col3">To set up a grid, you need to have both a grid container and grid items. The grid container will be a parent element that contains grid items as children and applies overarching styling and positioning to them. To turn an HTML element into a grid container, you must set the element’s display property to grid (for a block-level grid) or inline-grid (for an inline grid). Then, you can assign other properties to lay out the grid.<br/>By default, grids contain only one column. If you were to start adding items, each item would be put on a new row; that’s not much of a grid! To change this, we need to explicitly define the number of rows and columns in our grid. Creating two or more columns can be done with <strong>grid-template-columns</strong>. Setting the length of the columns using % requires the width of the grid to be specified.<br/><br/>Similary, <strong>grid-template-rows</strong> defines the number of rows and sets each row’s height. When using percentages in these two properties, remember that rows are defined as a percentage of the grid’s height, and columns are defined as a percentage of its width.<br/><br/>The property <strong>grid-template</strong> can replace the previous two CSS properties. When using grid-template, the values before the slash will determine the size of each row. The values after the slash determine the size of each column.
+                        </td>
+                        <td class="col4">.grid {<br />&nbsp;&nbsp;width: 1000px;<br />&nbsp;&nbsp;grid-template-columns: 200px 50%;<br />&nbsp;&nbsp;grid-template-rows: 100px 50% 100px;<br/>}
+                        <p style="text-align: center; font-weight: bold;">is the same as</p>
+                        .grid {<br />&nbsp;&nbsp;width: 1000px;<br />&nbsp;&nbsp;grid-template: 100px 50% / 200px 50%;<br/>}</td>
+                    </tr>
+                    <!-- Using fractions in grids -->
+                    <tr>
+                        <th class="rowhead">Using fractions in grids</th>
+                        <td class="col3">By using the fr unit, we can define the size of columns and rows as a fraction of the grid’s length and width. This unit was specifically created for use in CSS Grid. Using fr makes it easier to prevent grid items from overflowing the boundaries of the grid.<br/><br/>In this example, the grid will have three rows and three columns. The rows are splitting up the available 400 pixels of height into four parts. The first row gets two of those parts, the second row gets one, and the third row gets one. Therefore the first row is 200 pixels tall, and the second and third rows are 100 pixels tall.<br/><br/>Each column’s width is a fraction of the available space. In this case, the available space is split into five parts. The first column gets one-fifth of the space, the second column gets three-fifths, and the last column gets one-fifth. Since the total width is 1000 pixels, this means that the columns will have widths of 200 pixels, 600 pixels, and 200 pixels respectively.<br/><br/>It is possible to use fr with other units as well (1fr 60px 1fr). When this happens, each fr represents a fraction of the available space. In this example, 60 pixels are taken up by the second column. Therefore the first and third columns have 40 available to split between them. Since each gets one fraction of the total, they both end up being 20 pixels wide.</td>
+                        <td class="col4">grid {<br />&nbsp;&nbsp;display: grid;<br />&nbsp;&nbsp;width: 1000px;<br />&nbsp;&nbsp;height: 400px;<br />&nbsp;&nbsp;grid-template: 2fr 1fr 1fr / 1fr 3fr 1fr;<br />}</td>
+                    </tr>
+                    <!-- Grid repeat -->
+                    <tr>
+                        <th class="rowhead">Grid repeat</th>
+                        <td class="col3">The properties that define the number of rows and columns in a grid can take a function as a value. repeat() is one of these functions. The repeat() function was created specifically for CSS Grid. The first parameter of repeat indicated the amount of 'repeats' and the second parameter can have multiple values to set the length/heights of the  colums/rows</td>
+                        <td class="col4">grid-template-columns: repeat(3, 1fr) / 3fr 50% 1fr;</td>
+                    </tr>
+                     <!-- Grid minmax -->
+                     <tr>
+                        <th class="rowhead">Grid minmax</th>
+                        <td class="col3">you might want to prevent a row or column from getting too big or too small. For example, if you have a 100-pixel wide image in your grid, you probably don’t want its column to get thinner than 100 pixels! The minmax() function can help us solve this problem. Remember that to use this function, we shouldn't have a pre-defined width.</td>
+                        <td class="col4">grid-template-columns: 100px minmax(100px, 500px) 100px;</td>
+                    </tr>
+                    <!-- Grid Gap -->
+                    <tr>
+                        <th class="rowhead">Grid Gap</th>
+                        <td class="col3">The CSS properties grid-row-gap and grid-column-gap will put blank space between every row and column in the grid. It is important to note that grid-gap does not add space at the beginning or end of the grid. In the example code, our grid will have three columns with two ten-pixel gaps between them.<br/>grid-gap that can set the row and column gap at the same time. grid-gap: 20px 10px; will set the distance between rows to 20 pixels and the distance between columns to 10 pixels. Unlike other CSS grid properties, this shorthand does not take a / between values! If only one value is given, it will set the column gap and the row gap to that value.>/td>
+                        <td class="col4">.grid {<br />&nbsp;&nbsp;width: 320px;<br />&nbsp;&nbsp;grid-template-columns: repeat (3, 1fr);<br />&nbsp;&nbsp;grid-gap: 20px 10px;<br/>}</td>
+                    </tr>
+                    <!-- Grid Row & Column span -->
+                    <tr>
+                        <th class="rowhead">Grid Row & Column span</th>
+                        <td class="col3">Using the CSS properties grid-row-start and grid-row-end, we can make single grid items take up multiple rows. The value for grid-row-start should be the row at which you want the grid item to begin. The value for grid-row-end should be one greater than the row at which you want the grid item to end. An element that covers rows 2, 3, and 4 should have these declarations: grid-row-start: 2 and grid-row-end: 5. We can use the property grid-row as shorthand for grid-row-start and grid-row-end.<br/><br/>When an item spans multiple rows or columns using these properties, it will also include the grid-gap if any exists. For example, if an item spans two rows of height 100 pixels and there is a ten-pixel grid-gap, then the item will have a total height of 210 pixels.<br/><br/>The previous three properties also exist for columns. grid-column-start, grid-column-end and grid-column work identically to the row properties. These properties allow a grid item to span multiple columns.<br/><br/>When using these properties, we can use the keyword span to start or end a column or row relative to its other end.</td>
+                        <td class="col4">.item {<br />&nbsp;&nbsp;grid-row-start: 1;<br />&nbsp;&nbsp;grid-row-end: 3;<br />}
+                        <p style="text-align: center; font-weight: bold;">is the same as</p>
+                        .item {<br />&nbsp;&nbsp;grid-row: 1 / 3;<br />}
+                        <p style="text-align: center; font-weight: bold;">is the same as</p>
+                        .item {<br />&nbsp;&nbsp;grid-row: 1 / span 2;<br />}
+                        <p style="text-align: center; font-weight: bold;">is the same as</p>
+                        .item {<br />&nbsp;&nbsp;grid-row-start: 1;<br />&nbsp;&nbsp;grid-row-end: span 2;<br />}
+                        <p style="text-align: center; font-weight: bold;">is the same as</p>
+                        .item {<br />&nbsp;&nbsp;grid-row-start: span 2;<br />&nbsp;&nbsp;grid-row-end: 3;<br />}</td>
+                    </tr>
+                    <!-- Grid Area -->
+                    <tr>
+                        <th class="rowhead">Grid Area</th>
+                        <td class="col3">This property will set the starting and ending positions for both the rows and columns of an item. grid-area takes four values separated by slashes. The order is important! This is how grid-area will interpret those values. <br/>If you want elements to overlap with another item, you can set them to the same rows or columns, but set the z-index differently.
+                            <ol>
+                                <li>grid-row-start</li>
+                                <li>grid-column-start</li>
+                                <li>grid-row-end</li>
+                                <li>grid-column-end</li>
+                            </ol></td>
+                        <td class="col4">.item {<br />&nbsp;&nbsp;grid-area: 2 / 2 / span 3 / span 6;<br /></td>
+                    </tr>
+                    <!-- Grid Template Areas -->
+                    <tr>
+                        <th class="rowhead">Grid Template Areas</th>
+                        <td class="col3">The grid-template-areas property allows you to name sections of your web page to use as values in the grid-row-start, grid-row-end, grid-col-start,grid-col-end, and grid-area properties.</td>
+                        <td class="col4"><img src="./Resources/GTA.png" style="width: 250px;"></td>
+                    </tr>
+                    <!-- Justify Items -->
+                    <tr>
+                        <th class="rowhead">Justify/Align Items</th>
+                        <td class="col3">justify-items is a property that positions grid items along the inline, or row, axis. This means that it positions items from left to right across the web page. align-items positions them across the column axis, from top to bottom.<br/>justify-items can be set to: start/flex-start/left, center, end/flex-end/right, stretch (stretches all items to fill the grid area), safe, unsafe, baseline/baseline-first/baseline-last, legacy, inherit, initial.<br/>align-items can be set to: flex-start, center, flex-end, stretch, baseline, initial, inherit.<br/>More information on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items">justify-items</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">align-items</a></td>
+                        <td class="col4">.item {<br />&nbsp;&nbsp;justify-items: center;<br />&nbsp;&nbsp;align-items: flex-start;<br />}</td>
+                    </tr>
+                    <!-- Justify/Align Content -->
+                    <tr>
+                        <th class="rowhead">Justify/Align Content</th>
+                        <td class="col3">When the entire grid is smaller than the space for the grid container, use justify-content to justify the grid along the row axis. We can use justify-content to position the <strong>entire grid</strong> along the row axis. This property is declared on grid containers. You can use the following values: start, end, center, stretch, space-around(includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements as there is before the first and after the last element), space-between(includes an equal amount of space between grid items and no space at either end) or space evenly(places an even amount of space between grid items and at either end). Similar to justify-content, align-content aligns the grid along the column axis and takes similar values like justify-content. <br/>More information on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">justify-content</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content">align-content</a></td>
+                        <td class="col4">.item {<br />&nbsp;&nbsp;justify-content: space-between;<br />&nbsp;&nbsp;align-content: space-evenly;<br />}</td>
+                    </tr>
+                    <!-- Justify/Align Self -->
+                    <tr>
+                        <th class="rowhead">Justify/Align Self</th>
+                        <td class="col3">Both justify-self and align-self are analogous to the equivalent properties available on the container (justify-items and align-items), but they apply on specific items that should be positioned differently than the rest of the grid items. Justify-self specifies how an individual element should position itself with respect to the row axis. This property will override justify-items for any item on which it is declared. Align-self specifies how an individual element should position itself with respect to the column axis. This property will override align-items for any item on which it is declared. Align-self and justify-self accept the same values as align-items and justify-items.<br/>More information on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self">justify-content</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self">align-content</a></td>
+                        <td class="col4">.item {<br />&nbsp;&nbsp;justify-self: center;<br />&nbsp;&nbsp;align-self: center;<br />}</td>
+                    </tr>
+                    <!-- Implicit vs. Explicit Grids -->
+                    <tr>
+                        <th class="rowhead">Implicit vs. Explicit Grids</th>
+                        <td class="col3">The implicit grid is an algorithm built into the specification for CSS Grid that determines default behavior for the placement of elements when there are more than fit into the grid specified by the CSS. The default behavior of the implicit grid is as follows: items fill up rows first, adding new rows as necessary. New grid rows will only be tall enough to contain the content within them.<br/>CSS Grid provides two properties to specify the size of grid tracks added implicitly: <strong>grid-auto-rows</strong> and <strong>grid-auto-columns</strong>. grid-auto-rows and grid-auto-columns accept the same values as their explicit counterparts, grid-template-rows and grid-template-columns: pixels, fractions, percentages and the repeat() function. If we did not specify grid-auto-rows, the rows would be auto-adjusted to the height of the content of the grid items. The grid adds implicit rows by default. These properties are declared on grid containers.</td>
+                        <td class="col4">body {<br />&nbsp;&nbsp;display: grid;<br />&nbsp;&nbsp;grid: repeat(2, 100px) / repeat(2, 100px);<br />&nbsp;&nbsp;grid-auto-rows: 50px;<br />}</td>
+                    </tr>
+                    <!-- Grid Auto Flow -->
+                    <tr>
+                        <th class="rowhead">Grid Auto Flow</th>
+                        <td class="col3">grid-auto-flow specifies whether new elements should be added to rows or columns. grid-auto-flow accepts these values:
+                            <ol>
+                                <li>row — specifies the new elements should fill rows from left to right and create new rows when there are too many elements (default)
+                                <li>column — specifies the new elements should fill columns from top to bottom and create new columns when there are too many elements
+                                <li>dense — this keyword invokes an algorithm that attempts to fill holes earlier in the grid layout if smaller elements are added
+                            </ol><br/>You can pair row and column with dense, like this: grid-auto-flow: row dense;. This property is declared on grid containers.</td>
+                        <td class="col4">container {<br />&nbsp;&nbsp;grid-auto-flow: column;<br />}</td>
+                    </tr>
+                    <!-- Grid Guide -->
+                    <tr>
+                        <th class="rowhead">Grids Guide</th>
+                        <td class="col3" colspan="2"><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" style="margin-left: 30%;" target="_blank">A complete guide to Grids</a></td>
+                    </tr>
+                    <!-- Flexbox -->
+                    <tr id="fb">
+                        <th class="rowhead">Flexbox Guide</th>
+                        <td class="col3" colspan="2">The default value of flex-shrink is 1. The default value of flex-grow is 0. Minimum and maximum widths will take precedence over flex-grow and flex-shrink. <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" style="margin-left: 30%;" target="_blank">A complete guide to Flexbox</a> </td>
+                    </tr>
+                </tbody>
+            </table>
+        <img src="./Resources/The Box Model.png" id="boxmodel">
+        <h3 class="center" id="CSSdec">Declarations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="colhead">Declaration</th>
+                        <th class="colhead">Comment</th>
+                        <th class="colhead">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- color -->
+                    <tr>
+                        <th class="rowhead">color</th>
+                        <td class="col3">Adjusts the color of the selector. Can be specified using color keywords, RGB (numeric red, blue, green) and HSL (numeric hue, saturation and light). Colors acn also be set using Hex or hexadecimal colors, beginning with a #. To adjust opacity too use rgba(0,0,0,1) or hsla(0, 0%, 0%, 1). Alpha can only be used with RGB & HSL colors, not keywords or Hex.<br /><a href="https://www.rapidtables.com/web/color/RGB_Color.html" target="_blank">RGB/HEX color table</a><br /><a href="https://htmlcolors.com/hsl-color" target="_blank">HSL color table</a></td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;color: rgba(0,0,0);<br />}<br/><br/>section {<br />&nbsp;&nbsp;background-color: #C0C0C0;<br />}<br/><br/>section {<br />&nbsp;&nbsp;background-color: hsla(240, 80%, 20%, 0.4);<br />}</td>
+                    </tr>
+                    <!-- background color -->
+                    <tr>
+                        <th class="rowhead">background-color</th>
+                        <td class="col3">Adjusts the background color of the selector. Can be set to: color, transparent, initial, inherit. To specify opacity, use the 4th placeholder after rgba.<br /><a
+                                href="https://www.rapidtables.com/web/color/RGB_Color.html" target="_blank">Color table</a></td>
+                        <td class="col4">section {<br />&nbsp;&nbsp;background-color: rgba(0,0,0,0.7);<br />}</td>
+                    </tr>
+                    <!-- font-family -->
+                    <tr>
+                        <th class="rowhead">font-family</th>
+                        <td class="col3">Adjusts the font of the selector. Serif — fonts that have extra details on the ends of each letter. Examples include fonts like Times New Roman or Georgia, among others. Sans-Serif — fonts that do not have extra details on the ends of each letter. Instead, letters have straight, flat edges, like Arial or Helvetica. Pre-installed fonts serve as fallback fonts if the stylesheet specifies a font which is not installed on a user’s computer.<br /><a href="https://www.cssfontstack.com" target="_blank">Font stack</a></td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;font-family: Garamond, Times, serif;<br />}</td>
+                    </tr>
+                    <!-- font-size -->
+                    <tr>
+                        <th class="rowhead">font-size</th>
+                        <td class="col3">Length sets the font-size to a fixed size in px, cm, etc. % sets the
+                            font-size to a percent of the parent element's font size. inherit - nherits this
+                            property from its parent element. Initial sets this property to its default value.
+                            Smaller sets the font-size to a smaller size than the parent element and larger sets
+                            the font-size to a larger size than the parent element. Medium Sets the font-size to
+                            a medium size (default);<br />Can also be set to: xx-small; x-small; small; large;
+                            x-large; xx-large</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;font-size: 16px;<br />}</td>
+                    </tr>
+                    <!-- font-weight -->
+                    <tr>
+                        <th class="rowhead">font-weight</th>
+                        <td class="col3">100-900 defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold.<br />Can also be set to: normal, bold, bolder, lighter, initial and inherit</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;font-weight: bold;<br />}</td>
+                    </tr>
+                    <!-- font-style -->
+                    <tr>
+                        <th class="rowhead">font-style</th>
+                        <td class="col3">Can be set to: normal, italic, oblique, initial and inherit</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;font-style: italic;<br />}</td>
+                    </tr>
+                    <!-- text-align -->
+                    <tr>
+                        <th class="rowhead">text-align</th>
+                        <td class="col3">left, right center, justify (stretches the lines so that each line has equal width, initial, inherit</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;text-align: center;<br />}</td>
+                    </tr>
+                    <!-- text-transform -->
+                    <tr>
+                        <th class="rowhead">text-transform</th>
+                        <td class="col3">none, capitalize, uppercase, lowercase, initial, inherit</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;text-transform: capitalize;<br />}</td>
+                    </tr>
+                    <!-- text-decoration -->
+                    <tr>
+                        <th class="rowhead">text-decoration</th>
+                        <td class="col3">The text-decoration property specifies the decoration added to text, and is a shorthand property for: text-decoration-line (required; none, underline, overline, line-through, initial, inherit), text-decoration-color and text-decoration-style (solid, double, dotted, dashed, wavy, initial, inherit)</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;text-decoration-style: wavy;<br />}</td>
+                    </tr>
+                    <!-- letter-spacing -->
+                    <tr>
+                        <th class="rowhead">letter-spacing</th>
+                        <td class="col3">The letter-spacing property increases or decreases the space between characters in a text. The technical term for adjusting the spacing between letters is called tracking. Can be set to: normal (default: no extra space between characters); length (cm, px, etc.); initial or inherit</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;letter-spacing: 1px;<br />}</td>
+                    </tr>
+                    <!-- word-spacing -->
+                    <tr>
+                        <th class="rowhead">word-spacing</th>
+                        <td class="col3">Increases the spacing between words in a body of text. The default amount of space between words is usually 0.25em. Can be set to: normal; length (in px, pt, cm, em, etc); initial or inherit</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;word-spacing: 0.3em;<br />}</td>
+                    </tr>
+                    <!-- line-height -->
+                    <tr>
+                        <th class="rowhead">line-height</th>
+                        <td class="col3">The line-height property specifies the height of a line. Can be set to: normal (default); number (a number that will be multiplied with the current font-size to set the line height - this number is an absolute value that will compute the line height as a ratio of the font size); length (cm, px, etc.); % (a line height in percent of the current font size); initial or inherit. If we change the font size, a unitless line-height would automatically readjust, whereas the pixel value would remain static.<br/><img src="./Resources/line-height.png" style="width: 350px;"></td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;line-height: 3%;<br />}</td>
+                    </tr>
+                    <!-- opacity -->
+                    <tr>
+                        <th class="rowhead">opacity</th>
+                        <td class="col3">Opacity is the measure of how transparent an element is. It’s measured from 0 to 1, with 1 representing 100%, or fully visible and opaque, and 0 representing 0%, or fully invisible.</td>
+                        <td class="col4">section {<br />&nbsp;&nbsp;opacity: 0.7;<br />}</td>
+                    </tr>
+                    <!-- background image -->
+                    <tr>
+                        <th class="rowhead">background-image</th>
+                        <td class="col3">image path can be both relative and absolute</td>
+                        <td class="col4">main {<br />&nbsp;&nbsp;background-image: url("path");<br />}</td>
+                    </tr>
+                    <!-- background-size -->
+                    <tr>
+                        <th class="rowhead">background-size</th>
+                        <td class="col3">The background-size property specifies the size of the background images.There are four different syntaxes you can use with this property: the keyword syntax ("auto", "cover" and "contain"), the one-value syntax (sets the width of the image (height becomes "auto"), the two-value syntax (first value: width of the image, second value: height), and the multiple background syntax (separated with comma).<br/>1) auto - Default value. The background image is displayed in its original size<br/>2) length - Sets the width and height of the background image. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto". Read about length units<br/>3)% - Sets the width and height of the background image in percent of the parent element. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto"<br/>4) cover - Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges<br/>5) contain - Resize the background image to make sure the image is fully visible<br/>6)initial & 7) inherit</td>
+                        <td class="col4">img {<br />&nbsp;&nbsp;background-cover: 200px 350px;<br />}</td>
+                    </tr>
+                    <!-- background-repeat -->
+                    <tr>
+                        <th class="rowhead">background-repeat</th>
+                        <td class="col3">The background-repeat property sets if/how a background image will be repeated. By default, a background-image is repeated both vertically and horizontally. The background image is placed according to the background-position property. If no background-position is specified, the image is always placed at the element's top left corner.
+                            <ul>
+                                <li>repeat - the background image is repeated both vertically and horizontally.  The last image will be clipped if it does not fit (default)</li>
+                                <li>repeat-x - background image is repeated only horizontally</li>
+                                <li>repeat-y - background image is repeated only vertically</li>
+                                <li>no-repeat - background-image is not repeated. The image will only be shown once</li>
+                                <li>space - background-image is repeated as much as possible without clipping. The first and last images are pinned to either side of the element, and whitespace is distributed evenly between the images</li>
+                                <li>round - background-image is repeated and squished or stretched to fill the space (no gaps)</li>
+                                <li>initial - sets this property to its default value</li>
+                                <li>inherit - inherits this property from its parent element</li></ul></td>
+                        <td class="col4">img {<br/>&nbsp;&nbsp;background-image: repeat;<br/>;</td>
+                    </tr>
+                     <!-- background-position -->
+                     <tr>
+                        <th class="rowhead">background-position</th>
+                        <td class="col3">The background-position property sets the starting position of a background image. By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally. <br/>Can be set to: initial, inherit, left top, left center, left bottom, right top, right center, right bottom, center top, center center, center bottom (if you only specify one keyword, the other value will be "center"). <br/>Can also be set to x% y%: the first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. . Default value is: 0% 0%. <br/>Can also be set to xpos ypos: the first value is the horizontal position and the second value is the vertical. The top left corner is 0 0. Units can be pixels (0px 0px) or any other CSS units. If you only specify one value, the other value will be 50%. You can mix % and positions.</td>
+                        <td class="col4">box {<br />&nbsp;&nbsp;background-position: center;<br />}</td>
+                    </tr>
+                    <!-- position -->
+                    <tr>
+                        <th class="rowhead">position</th>
+                        <td class="col3">The position property specifies the type of positioning method used for an element. There are five different position values and after the position value is chosen, are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value. <br/>1) <strong>static</strong>: not positioned in any special way; it is always positioned according to the normal flow of the page + static positioned elements are not affected by the top, bottom, left, and right properties. <br/>2) <strong>relative</strong>: allows you to position an element relative to its default static position on the web page. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. <br/>3) <strong>fixed</strong>: position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. A fixed element does not leave a gap in the page where it would normally have been located. <br/>4) <strong>absolute</strong>: positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. When an element’s position is set to absolute all other elements on the page will ignore the element and act like it is not present on the page. The element will be positioned relative to its closest positioned parent element. <br/>5) <strong>sticky</strong>: positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed)</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;position: relative;<br />&nbsp;&nbsp;left: 60px;<br />}</td>
+                    </tr>
+                    <!-- z-index -->
+                    <tr>
+                        <th class="rowhead">z-index</th>
+                        <td class="col3">The z-index property controls how far “back” or how far “forward” an element should appear on the web page when elements overlap. This can be thought of the depth of elements, with deeper elements appearing behind shallower elements. The z-index property accepts integer values. Depending on their values, the integers instruct the browser on the order in which elements should be displayed on the web page. z-index property does not work on static elements. so position must be changed. The greater the integer, the more forward it brings the element.</td>
+                        <td class="col4">h1 {<br />&nbsp;&nbsp;z-index: 8;<br />}</td>
+                    </tr>
+                    <!-- display -->
+                    <tr>
+                        <th class="rowhead">display</th>
+                        <td class="col3">The display property specifies the display behavior (the type of rendering box) of an element. It dictates if the element can share horizontal space with other elements. Some elements fill the entire browser from left to right regardless of the size of their content. Other elements only take up as much horizontal space as their content requires and can be directly next to other elements. <br/><strong>Inline elements</strong> (em, strong, a are all inline by default) have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element. The height and width of these elements cannot be specified in the CSS document. <br/> <strong>Block-level elements</strong> (div, p, footer, h1-h6 are all inline by default) fill the entire width of the page by default, but their width/height property can also be set. Unless otherwise specified, they are the height necessary to accommodate their content.<br/><strong>Inline-block display</strong> combines features of both inline and block elements. Inline-block elements can appear next to each other and we can specify their dimensions using the width and height properties. Images are the best example of default inline-block elements. <br/>Click <a href="https://www.w3schools.com/CSSref/pr_class_display.asp" target="_blank">here</a> to view different property values.</td>
+                        <td class="col4">box {<br />&nbsp;&nbsp;display: inline-block;<br />}</td>
+                    </tr>
+                    <!-- float -->
+                    <tr>
+                        <th class="rowhead">float</th>
+                        <td class="col3">The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. The float property can have one of the following values: left, right, none, inherit. Floated elements must have a width specified, as in the example above. Otherwise, the element will assume the full width of its containing element, and changing the float value will not yield any visible results.</td>
+                        <td class="col4">img {<br />&nbsp;&nbsp;float: left;<br />}</td>
+                    </tr>
+                    <!-- clear -->
+                    <tr>
+                        <th class="rowhead">clear</th>
+                        <td class="col3">The float property can also be used to float multiple elements at once. However, when multiple floated elements have different heights, it can affect their layout on the page. Specifically, elements can “bump” into each other and not allow other elements to properly move to the left or right. The clear property specifies <strong>how elements should behave when they bump into each other on the page</strong>. It can take on one of the following values:<br/><strong>left</strong> — the left side of the element will not touch any other element within the same containing element.<br/><strong>right</strong> — the right side of the element will not touch any other element within the same containing element.<br/><strong>both</strong> — neither side of the element will touch any other element within the same containing element; and <br/><strong>none</strong> - the element can touch either side.</td>
+                        <td class="col4">div {<br />&nbsp;&nbsp;clear: both;<br />}</td>
+                    </tr>
+                    <!-- height -->
+                    <tr>
+                        <th class="rowhead">height</th>
+                        <td class="col3">auto - the browser calculates the height (default).	
+                            Length defines the height in px, cm, etc. %	defines the height in percent of the containing block. Initial sets this property to its default value. Inherit	inherits this property from its parent element.</td>
+                        <td class="col4">box {<br />&nbsp;&nbsp;height: 800px;<br />}</td>
+                    </tr>
+                    <!-- width -->
+                    <tr>
+                        <th class="rowhead">width</th>
+                        <td class="col3">auto - the browser calculates the height (default).	
+                            Length defines the height in px, cm, etc. %	defines the height in percent of the containing block. Initial sets this property to its default value. Inherit	inherits this property from its parent element.</td>
+                        <td class="col4">box {<br />&nbsp;&nbsp;width: 300px;<br />}</td>
+                    </tr>
+                    <!-- border -->
+                    <tr>
+                        <th class="rowhead">border<br/>border-top<br/>border-bottom<br/>border-left<br/>border-right</th>
+                        <td class="col3">A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width (thickness of the border - a border’s thickness can be set in pixels or with one of the following keywords: thin, medium, or thick), <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#Values" target="_blank">style</a>, and color.</td>
+                        <td class="col4">box {<br />&nbsp;&nbsp;bordr: 3px dashed red;<br />}</td>
+                    </tr>
+                    <!-- border-radius -->
+                    <tr>
+                        <th class="rowhead">border-radius</th>
+                        <td class="col3">You can modify the corners of an element’s border box with the border-radius property. 5px will set all four corners of the border to a radius of 5 pixels (i.e. the same curvature that a circle with radius 5 pixels would have). You can create a border that is a perfect circle by setting the radius equal to the height of the box, or to 100%. <br />Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner). <br />Three values - border-radius: 15px 50px 30px; (first value applies to top-left corner, second value applies to top-right and bottom-left corners, and third value applies to bottom-right corner). <br />Two values - border-radius: 15px 50px; (first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners). <br />One value - border-radius: 15px; (the value applies to all four corners, which are rounded equally.<br /></td>
+                        <td class="col4">h1 {<br />&nbsp;&nbsp;border-radius: 10px 20px;<br />}</td>
+                    </tr>
+                    <!-- list-style -->
+                    <tr>
+                        <th class="rowhead">list-style</th>
+                        <td class="col3">Specifies the type of list-item marker in a list. Can be set to: none; disc - circle bullet point; lower-alpha; lower-roman; square; upper-alpha; upper-roman and <a href="https://www.w3schools.com/CSSref/pr_list-style-type.asp">more</a></td>
+                        <td class="col4">ul li {<br />&nbsp;&nbsp;list-style: lower-roman;<br />}</td>
+                    </tr>
+                    <!-- padding -->
+                    <tr>
+                        <th class="rowhead">padding<br />padding-top<br />padding-bottom<br />padding-right<br />padding-left</th>
+                        <td class="col3">The space between the contents of a box and the borders of a box. Can be set to length (px, cm), % or inherit. Can have a single value that applies to all four sides; a double value that applies to top-bottom and left-right; four values that select padding for each side individually (applied:top, right, bottom, left); and three values that select top, right & left and bottom. <br />If an element has a specified width (e.g. 300px), the padding(e.g. 25px) added to that element will be added to the total width of the element(i.e.= 350px). To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its width; if you increase the padding, the available content space will decrease.</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;padding: 25px;<br />&nbsp;&nbsp;box-sizing: border-box;<br />&nbsp;&nbsp;width: 300px;<br />}</td>
+                    </tr>
+                    <!-- margin -->
+                    <tr>
+                        <th class="rowhead">margin<br />margin-top<br />margin-bottom<br />margin-right<br />margin-left</th>
+                        <td class="col3">The space between the contents of a box and the borders of a box. Can be set to length (px, cm), % or inherit. Can have a single value that applies to all four sides; a double value that applies to top-bottom and left-right; four values that select margin for each side individually (applied: top, right, bottom, left); and three values that select top, right & left and bottom.<br />Remeber to set the width of the adjusting selector, otherwise the width of the div will be automatically set to the full width of its containing element, like the 'body', for example. <br/>You can set the margin property to 0 auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins. </td>
+                        <td class="col4">box {<br />&nbsp;&nbsp;margin: 0 auto;<br />}</td>
+                    </tr>
+                    <!-- box-sizing -->
+                    <tr>
+                        <th class="rowhead">box-sizing</th>
+                        <td class="col3">The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not. Can be set to: content-box (default; the width and height properties (and min/max properties) includes only the content - border and padding are not included); border-box (the width and height properties (and min/max properties) includes content, padding and border); initial or inherit. The code in the example above resets the box model to border-box for all HTML elements. In this box model, the height and width of the box will remain fixed. The border thickness and padding will be included inside of the box, which means the overall dimensions of the box do not change.</td>
+                        <td class="col4">* {<br />&nbsp;&nbsp;box-sizing: border-box;<br />}</td>
+                    </tr>
+                    <!-- min-height -->
+                    <tr>
+                        <th class="rowhead">min-height<br/>min-width</th>
+                        <td class="col3">Because a web page can be viewed through displays of differing screen size, the content on the web page can suffer from those changes in size. To avoid this problem, CSS offers two of these properties that can limit how narrow or how wide an element’s box can be sized to. Can be set to length (cm, px, etc), % or inherit.</td>
+                        <td class="col4">box {<br />&nbsp;&nbsp;min-height: 500px;<br/>&nbsp;&nbsp;min-width: 400px;<br />}</td>
+                    </tr>
+                    <!-- overflow -->
+                    <tr>
+                        <th class="rowhead">overflow</th>
+                        <td class="col3">The overflow property controls what happens to content that spills, or overflows, outside its box. It can be set to one of the following values: visible (default: overflow is not clipped - it renders outside the element's box); hidden (overflow is clipped, and the rest of the content will be invisible); scroll (overflow is clipped, but a scroll-bar is added to see the rest of the content); auto (if overflow is clipped, a scroll-bar should be added to see the rest of the content); initial or inherit</td>
+                        <td class="col4">section {<br />&nbsp;&nbsp;overflow: auto;<br />}</td>
+                    </tr>
+                    <!-- visibility -->
+                    <tr>
+                        <th class="rowhead">visibility</th>
+                        <td class="col3">Elements can be hidden from view with the visibility property. Can be set to: visible (default); hidden (but still takes up space); collapse (Only for table rows ('tr'), row groups ('tbody'), columns ('col'), column groups ('colgroup'). This value removes a row or column, but it does not affect the table layout. The space taken up by the row or column will be available for other content. If collapse is used on other elements, it renders as "hidden"); initial or inherit.<br/><br/>Even when the visibility is set to hidden, the placeholder for the item remains in the flow of html. To remove it completely - use display: none;</td>
+                        <td class="col4">p {<br />&nbsp;&nbsp;visibility: hidden;<br />}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="center" id="CSStran">Transitions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="colhead">Declaration</th>
+                        <th class="colhead">Comment</th>
+                        <th class="colhead">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Animatable CSS properties -->
+                    <tr>
+                        <th class="rowhead">Animatable CSS properties</th>
+                        <td class="col3">Certain <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" style="font-weight: bold;">CSS properties</a> can be animated using CSS Animations or CSS Transitions. Animation means that their values can be made to change gradually over a given amount of time. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">Learn more about CSS transitions.</a></td>
+                        <td class="col4">-</td>
+                    </tr>
+                    <!-- Background color transitions -->
+                    <tr>
+                        <th class="rowhead">Background color transitions</th>
+                        <td class="col3">Say we wanted to edit the background color transition of a link when it is being hovered upon (a -> a:hover). For that, we can specify in 'a' the transition-property declaration and the transition-duration declaration. In this example transition-property declares which CSS property we will be animating. The second property, transition-duration, declares how long the transition will take — one second.<br/>Different properties transition in different ways, for example:
+                            <ul>
+                                <li>Color values, like color and background-color, will blend to a new color.</li>
+                                <li>Length values like font-size, width, and height will grow or shrink.</li>
+                            </ul>Duration is specified in seconds or milliseconds, such as 3s, 0.75s, 500ms. The default value is 0s, or instantaneous, as if there is no transition.</td>
+                        <td class="col4">a {<br />&nbsp;&nbsp;transition-property: background-color;<br />&nbsp;&nbsp;transition-duration: 1s;<br />}</td>
+                    </tr>
+                    <!-- Transition Delay -->
+                    <tr>
+                        <th class="rowhead">Transition Delay</th>
+                        <td class="col3">Our next transition property is transition-delay. Much like duration, its value is an amount of time. Delay specifies the time to wait before starting the transition. As with the duration property, the default value for transition-delay is 0s, which means no delay.</td>
+                        <td class="col4">a {<br />&nbsp;&nbsp;transition-delay: 650ms;<br />}</td>
+                    </tr>
+                    <!-- Timing Function -->
+                    <tr>
+                        <th class="rowhead">Timing Function</th>
+                        <td class="col3">The timing function describes the pace of the transition. The default value is ease, which starts the transition slowly, speeds up in the middle, and slows down again at the end. Other values include:
+                            <ul>
+                                <li>ease-in — starts slow, accelerates quickly, stops abruptly</li>
+                                <li>ease-out — begins abruptly, slows down, and ends slowly</li>
+                                <li>ease-in-out — starts slow, gets fast in the middle, and ends slowly</li>
+                                <li>linear — constant speed throughout</li>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function">Other</a></li>
+                            </ul>
+                        </td>
+                        <td class="col4">.gazelle {<br />&nbsp;&nbsp;transition-timing-function: ease-in;<br />}</td>
+                    </tr>
+                    <!-- Transition shortcut -->
+                    <tr>
+                        <th class="rowhead">Transition shortcut</th>
+                        <td class="col3">This shorthand property describes each aspect of the transition puzzle in a single declaration. The properties must be specified in this order: transition-property, transition-duration, transition-timing-function, transition-delay.<br/>Leaving out one of the properties causes the default value for that property to be applied. There is one exception: You must set duration if you want to define delay. Since both are time values, the browser will always interpret the first time value it sees as duration.</td>
+                        <td class="col4">.gazelle {<br />&nbsp;&nbsp;transition: color 1.5s linear 0.5s;<br />}</td>
+                    </tr>
+                    <!-- Combining Transitions -->
+                    <tr>
+                        <th class="rowhead">Combining Transitions</th>
+                        <td class="col3">The shorthand transition rule has one advantage over the set of separate transition-<property> rules: you can describe unique transitions for multiple properties, and combine them.
+
+                            To combine transitions, add a comma (,) before the semicolon (;) in your rule. After the comma, use the same shorthand syntax.</td>
+                        <td class="col4">.gazelle {<br />&nbsp;&nbsp;transition: color 1.5s linear 0.5s;<br />&nbsp;&nbsp;font-size 750ms ease-in 750ms;<br />}</td>
+                    </tr>
+                    <!-- All -->
+                    <tr>
+                        <th class="rowhead">All</th>
+                        <td class="col3">It is common to use the same duration, timing function, and delay for multiple properties. When this is the case you can set the transition-property value to all. This will apply the same values to all properties. To effect this, you can use all as a value for transition-property. All means every value that changes will be transitioned in the same way. You can use all with the separate transition properties, or the shorthand syntax.</td>
+                        <td class="col4">.properties {<br />&nbsp;&nbsp;transition: all 1.5s linear 0.5s;<br />}</td>
+                    </tr>
+                </tbody>
+            </table>
+        <h3 class="center" id="rgx">RegEx</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th class="colhead">Topic</th>
+                    <th class="colhead">Comment</th>
+                    <th class="colhead">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- alteration -->
+                <tr>
+                    <th class="rowhead">Alteration</th>
+                    <td class="col3">Alternation, performed in regular expressions with the pipe symbol, |, allows us to match either the characters preceding the | OR the characters after the | </td>
+                    <td class="col4">baloon|gorillaz</td>
+                </tr>
+                <!-- character sets -->
+                <tr>
+                    <th class="rowhead">Character Sets</th>
+                    <td class="col3">Character sets, denoted by a pair of brackets [], let us match one character from a series of characters, allowing for matches with incorrect or different spellings. The regex con[sc]en[sc]us will match consensus, the correct spelling of the word, but also match the following three incorrect spellings: concensus, consencus, and concencus. A character class matches only a single character. gr[ae]y does not match graay, graey or any such thing. Thus the regex [cat] will match the characters c, a, or t, but not the text cat.<br/><br/>We can make our character sets even more powerful with the help of the caret ^ symbol. Placed at the front of a character set, the ^ negates the set, matching any character that is not stated. These are called negated character sets. Thus the regex [^cat] will match any character that is not c, a, or t, and would completely match each character d, o or g.</td>
+                    <td class="col4">con[sc]en[sc]us</td>
+                </tr>
+                <!-- . -->
+                <tr>
+                    <th class="rowhead">.</th>
+                    <td class="col3">The wildcard . will match any single character (letter, number, symbol or whitespace) in a piece of text. They are useful when we do not care about the specific value of a character, but only that a character exists. <br/><br/>What happens if we want to match an actual period, .? We can use the escape character, \, to escape the wildcard functionality of the . and match an actual period. The regex Howler monkeys are really lazy\. will completely match the text Howler monkeys are really lazy..</td>
+                    <td class="col4">I ate . bananas = <br/>I ate 3 bananas<br/>I ate 8 bananas</td>
+                </tr>
+                <!-- Ranges -->
+                <tr>
+                    <th class="rowhead">Ranges</th>
+                    <td class="col3">The regex [abc], which would match any character a, b, or c, is equivalent to regex range [a-c]. The - character allows us to specify that we are interested in matching a range of characters. With ranges we can match any single capital letter with the regex [A-Z], lowercase letter with the regex [a-z], any digit with the regex [0-9]. We can even have multiple ranges in the same character set. To match any single capital or lowercase alphabetical character, we can use the regex [A-Za-z]. <br/> <strong>Remember, within any character set [] we only match one character.</strong></td>
+                    <td class="col4">[0-9A-Za-z] - matches any hexadecimal character, case insensitive</td>
+                </tr>
+                <!-- Shorthand Character Classes -->
+                <tr>
+                    <th class="rowhead">Shorthand Character Classes</th>
+                    <td class="col3">There are shorthand character classes that represent common ranges, and they make writing regular expressions much simpler:
+                        <ul>
+                            <li>\w: the “word character” class represents the regex range [A-Za-z0-9_], and it matches a single uppercase character, lowercase character, digit or underscore</li>
+                            <li>\d: the “digit character” class represents the regex range [0-9], and it matches a single digit character</li>
+                            <li>\s: the “whitespace character” class represents the regex range [ \t\r\n\f\v], matching a single space, tab, carriage return, line break, form feed, or vertical tab</li>
+                        </ul>
+                    In addition to the shorthand character classes \w, \d, and \s, we also have access to the negated shorthand character classes! These shorthands will match any character that is NOT in the regular shorthand classes. These negated shorthand classes include:
+                    <ul>
+                        <li>\W: the “non-word character” class represents the regex range [^A-Za-z0-9_], matching any character that is not included in the range represented by \w</li>
+                        <li>\D: the “non-digit character” class represents the regex range [^0-9], matching any character that is not included in the range represented by \d</li>
+                        <li>\S: the “non-whitespace character” class represents the regex range [^ \t\r\n\f\v], matching any character that is not included in the range represented by \s</li></ul></td>
+                    <td class="col4">[^A-Za-z0-9_]</td>
+                </tr>
+                <!-- Grouping -->
+                <tr>
+                    <th class="rowhead">Grouping</th>
+                    <td class="col3">What if we want to match the whole piece of text I love baboons and I love gorillas with the same regex? Your first guess might be to use the regex I love baboons|gorillas. This regex, while it would completely match the string I love baboons, would not match I love gorillas, and would instead match gorillas. This is because the | symbol matches the entire expression before or after itself. Grouping, denoted with the open parenthesis ( and the closing parenthesis ), lets us group parts of a regular expression together, and allows us to limit alternation to part of the regex.<br/>The regex I love (baboons|gorillas) will match the text I love and then match either baboons or gorillas, as the grouping limits the reach of the | to the text within the parentheses.</td>
+                    <td class="col4">I love baboons|gorilla[sz]<br/>I love (baboons|gorilla[sz]</td>
+                </tr>
+                <!-- Fixed Quantifiers -->
+                <tr>
+                    <th class="rowhead">Fixed Quantifiers</th>
+                    <td class="col3">The answer is yes, with the help of quantifiers! Fixed quantifiers, denoted with curly braces {}, let us indicate the exact quantity of a character we wish to match, or allow us to provide a quantity range to match on.
+                        <ul>
+                            <li>\w{3} will match exactly 3 word characters</li>
+                            <li>\w{4,7} will match at minimum 4 word characters and at maximum 7 word characters</li></ul>
+                    The regex roa{3}r will match the characters ro followed by 3 a's, and then the character r, such as in the text roaaar. The regex roa{3,7}r will match the characters ro followed by at least 3 a's and at most 7 a's, followed by an r, matching the strings roaaar, roaaaaar and roaaaaaaar.<br/><br/>An important note is that quantifiers are considered to be greedy. This means that they will match the greatest quantity of characters they possibly can. For example, the regex mo{2,4} will match the text moooo in the string moooo, and not return a match of moo, or mooo. This is because the fixed quantifier wants to match the largest number of os as possible, which is 4 in the string moooo.</td>
+                    <td class="col4">\w{1,9}</td>
+                </tr>
+                <!-- Optional Quantifiers -->
+                <tr>
+                    <th class="rowhead">Optional Quantifiers</th>
+                    <td class="col3">Optional quantifiers, indicated by the question mark ?, allow us to indicate a character in a regex is optional, or can appear either 0 times or 1 time. For example, the regex humou?r matches the characters humo, then either 0 occurrences or 1 occurrence of the letter u, and finally the letter r. Note the ? only applies to the character directly before it.<br/>With all quantifiers, we can take advantage of grouping to make even more advanced regexes. The regex The monkey ate a (rotten )?banana will completely match both The monkey ate a rotten banana and The monkey ate a banana.<br/>Since the ? is a metacharacter, you need to use the escape character in your regex in order to match a question mark ? in a piece of text.</td>
+                    <td class="col4">duck.?</td>
+                </tr>
+                <!-- Kleene Star -->
+                <tr>
+                    <th class="rowhead">Kleene Star</th>
+                    <td class="col3">The Kleene star, denoted with the asterisk *, is also a quantifier, and matches the preceding character 0 or more times. This means that the character doesn’t need to appear, can appear once, or can appear many many times.<br/>The regex meo*w will match the characters me, followed by 0 or more o's, followed by a w. Thus the regex will match mew, meow, meooow, and meoooooooooooow.</td>
+                    <td class="col4">meo*w</td>
+                </tr>
+                <!-- Kleene plus -->
+                <tr>
+                    <th class="rowhead">Kleene plus</th>
+                    <td class="col3">Another useful quantifier is the Kleene plus, denoted by the plus +, which matches the preceding character 1 or more times. The regex meo+w will match the characters me, followed by 1 or more os, followed by a w. Thus the regex will match meow, meooow, and meoooooooooooow, but not match mew.</td>
+                    <td class="col4">meo+w</td>
+                </tr>
+                <!-- Anchors -->
+                <tr>
+                    <th class="rowhead">Anchors</th>
+                    <td class="col3">The anchors hat ^ and dollar sign $ are used to match text at the start and the end of a string, respectively. The regex ^Monkeys: my mortal enemy$ will completely match the text Monkeys: my mortal enemy but not match Spider Monkeys: my mortal enemy in the wild or Squirrel Monkeys: my mortal enemy in the wild. The ^ ensures that the matched text begins with Monkeys, and the $ ensures the matched text ends with enemy.<br/>Without the anchor tags, the regex Monkeys: my mortal enemy will match the text Monkeys: my mortal enemy in both Spider Monkeys: my mortal enemy in the wild and Squirrel Monkeys: my mortal enemy in the wild.</td>
+                    <td class="col4">^Monkeys: my mortal enemy$</td>
+                </tr>
+
+            </tbody>
+        </table>
+        </main>
+        <footer>
+            <p class="Turan center">by Turan Rzazade</p>
+        </footer>
+    </body>
+</html>
+
+                <!--  -->
+                <tr>
+                    <th class="rowhead"></th>
+                    <td class="col3"></td>
+                    <td class="col4">&lt;&gt;  &lt;/&gt;</td>
+                </tr>
+
+                    <!--  -->
+                    <tr>
+                        <th class="rowhead"></th>
+                        <td class="col3"></td>
+                        <td class="col4">&lt;&gt;  &lt;/&gt;</td>
+                    </tr>

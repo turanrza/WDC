@@ -1,6 +1,6 @@
 html {
     background-color: lavender;
-    background-image: url("background.jpeg");
+    background-image: url("./Resources/background.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,33 +16,50 @@ html {
 }
 
 a:link {
-    color: white;
+    color: midnightblue;
 }
 
 a:visited {
-    color: crimson;
+    color: midnightblue;
 }
 
 .nav {
-    display: flex;
+    
 }
 
 .HTMLnav {
-    flex: 1;
-    padding: 1%;
+    padding: 0.2%;
     line-height: 160%;
+    display: inline-block;
+    background-color: rgba(255,228,225,0.4);
+    position: fixed;
+    left: 0px;
+    top: 5px;
+    border-radius: 5%;
+    font-size: 13px;
 }
 
 .CSSnav {
-    padding: 1%;
+    padding: 0.2%;
     line-height: 160%;
+    display: inline-block;
+    background-color: rgba(255,228,225,0.4);
+    position: fixed;
+    right: 0px;
+    top: 5px;
+    border-radius: 5%;
+    font-size: 13px;
 }
 
 .b2top{
     margin-bottom: 20%;
     position: fixed;
-    right: 2%;
+    right: 0.2%;
     top: 92%;
+    padding: 0px 0.5% 0px;
+    border-radius: 5%;
+    background-color: rgba(255,228,225,0.4);
+    font-size: 13px;
 }
 
 h1 {
@@ -71,7 +88,7 @@ h3 {
     font-size: 24px;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 50%;
 }
 
@@ -90,24 +107,22 @@ h3 {
     padding: 10px 10px;
     border: 1px solid black;
     display: block;
-
-
 }
 
 table {
     margin: 0 auto;
     border-collapse: collapse;
-    border: 2px solid lightblue;
+    border: 2px solid rgb(68, 91, 197);
     padding: 10px;
     text-align: center;
     vertical-align: middle;
-    width: 96%;
-    background-color: rgba(255,204,204,0.7);
+    width: 93%;
+    background-color: rgba(255,204,204,0.82);
 }
 
 th, td {
-    border-bottom: 1px solid silver;
-    border-left: 1px solid silver;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    border-left: 1px solid rgb(168, 168, 168);
     padding: 10px;
 
 }
@@ -125,14 +140,16 @@ td ul {
 
 .rowhead {
     color: rgba(153, 0, 76);
+    box-sizing: border-box;
     font-family: monospace;
     font-size: 15px;
     width: 150px;
+    padding: 4px;
 }
 
 .col2 {
     color: darkblue;
-    font-size: 20px;
+    font-size: 17px;
     text-emphasis: bold;
     font-family: monospace;
 }
@@ -149,7 +166,16 @@ td ul {
 .col4 {
     text-align: left;
     font-family: monospace;
-    width: 250px;
-    font-size: 16px;
+    width: 250px !important;
+    font-size: 14px;
+    overflow: scroll;
 }
 
+#inputtypes{
+    color: rgba(102,0,51);
+    background-color: rgb(68, 91, 197);
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 22px;
+    text-transform: uppercase;
+}
